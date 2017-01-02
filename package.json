@@ -1,0 +1,30 @@
+{
+  "name": "stumpy-eleven",
+  "version": "11.0.0",
+  "description": "Stumptown Bear version eleven",
+  "scripts": {
+    "find-npm-data": "npm access ls-packages krambuhl > build/data/npm-modules.json",
+    "dev": "webpack-dev-server --config build/webpack.config.dev.js --inline",
+    "build": "webpack --config build/webpack.config.dev.js",
+    "prod": "webpack --config build/webpack.config.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/krambuhl/stumpy-eleven.git"
+  },
+  "author": "Evan Krambuhl <thekrambuhl@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krambuhl/stumpy-eleven/issues"
+  },
+  "homepage": "https://github.com/krambuhl/stumpy-eleven#readme",
+  "devDependencies": {
+    "image-loader": "^0.0.1",
+    "markdown-loader": "^0.1.7",
+    "responsive-loader": "^0.7.0",
+    "vue-loader": "^10.0.2",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-merge": "^2.0.0"
+  }
+}
