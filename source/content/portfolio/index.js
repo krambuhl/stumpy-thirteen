@@ -1,25 +1,25 @@
-import PortfolioIndex from 'templates/PortfolioIndex';
+import Portfolio from 'Templates/Portfolio';
 
-import { data as trimetData } from './trimet.js';
+import trimet from './trimet';
 
-export {
-  template: PortfolioIndex,
+export default {
+  template: Portfolio,
   data: {
     pageTitle: 'Portfolio - Stumptown Bear',
     projects: [
-      { href: 'trimet', data: trimetData },
-      { href: 'fuzzy-chainsaw', data: trimetData },
-      { href: 'spectrum-health', data: trimetData },
-      { href: 'ca-portfolio', data: trimetData },
-      { href: 'juniper-deception-force', data: trimetData },
-      { href: 'webtrends-today', data: trimetData },
-      { href: 'webtrends-prototypes', data: trimetData },
-      { href: 'webtrends-streams', data: trimetData },
-      { href: 'juniper-rap-battle', data: trimetData },
-      { href: 'personal-prototypes', data: trimetData },
-      { href: 'il7', data: trimetData },
-      { href: 'iounoi', data: trimetData },
-      { href: 'precision-machines', data: trimetData },
+      { href: 'trimet', data: trimet.data },
+      { href: 'fuzzy-chainsaw', data: trimet.data },
+      { href: 'spectrum-health', data: trimet.data },
+      { href: 'ca-portfolio', data: trimet.data },
+      { href: 'juniper-deception-force', data: trimet.data },
+      { href: 'webtrends-today', data: trimet.data },
+      { href: 'webtrends-prototypes', data: trimet.data },
+      { href: 'webtrends-streams', data: trimet.data },
+      { href: 'juniper-rap-battle', data: trimet.data },
+      { href: 'personal-prototypes', data: trimet.data },
+      { href: 'il7', data: trimet.data },
+      { href: 'iounoi', data: trimet.data },
+      { href: 'precision-machines', data: trimet.data },
     ]
   }
 }

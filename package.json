@@ -3,10 +3,11 @@
   "version": "11.0.0",
   "description": "Stumptown Bear version eleven",
   "scripts": {
-    "find-npm-data": "npm access ls-packages krambuhl > build/data/npm-modules.json",
+    "list-npm-modules": "npm access ls-packages krambuhl > build/data/npm-modules.json",
     "dev": "webpack-dev-server --config build/webpack.config.dev.js --inline",
-    "build": "webpack --config build/webpack.config.dev.js",
-    "prod": "webpack --config build/webpack.config.prod.js"
+    "prod": "webpack --config build/webpack.config.prod.js",
+    "build": "webpack --progress --config build/webpack.config.build.js",
+    "start": "serve dist"
   },
   "repository": {
     "type": "git",
@@ -19,10 +20,26 @@
   },
   "homepage": "https://github.com/krambuhl/stumpy-eleven#readme",
   "devDependencies": {
-    "image-loader": "^0.0.1",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "image-webpack-loader": "^3.1.0",
+    "jimp": "^0.2.27",
+    "json-loader": "^0.5.4",
     "markdown-loader": "^0.1.7",
     "responsive-loader": "^0.7.0",
+    "serve": "^2.1.2",
+    "static-site-generator-webpack-plugin": "^3.1.0",
+    "style-loader": "^0.13.1",
+    "vue": "^2.1.8",
     "vue-loader": "^10.0.2",
+    "vue-server-renderer": "^2.1.8",
+    "vue-style-loader": "^1.0.0",
+    "vue-template-compiler": "^2.1.8",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2",
     "webpack-merge": "^2.0.0"

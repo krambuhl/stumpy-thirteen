@@ -1,6 +1,6 @@
-import Homepage from 'templates/Homepage';
+import Homepage from 'Templates/Homepage';
 
-export {
+export default {
   template: Homepage,
   data: {
     pageTitle: 'Stumptown Bear'
