@@ -7,19 +7,19 @@ export default {
   data: {
     pageTitle: 'Portfolio - Stumptown Bear',
     projects: [
-      { href: 'trimet', data: trimet.data },
-      { href: 'fuzzy-chainsaw', data: trimet.data },
-      { href: 'spectrum-health', data: trimet.data },
-      { href: 'ca-portfolio', data: trimet.data },
-      { href: 'juniper-deception-force', data: trimet.data },
-      { href: 'webtrends-today', data: trimet.data },
-      { href: 'webtrends-prototypes', data: trimet.data },
-      { href: 'webtrends-streams', data: trimet.data },
-      { href: 'juniper-rap-battle', data: trimet.data },
-      { href: 'personal-prototypes', data: trimet.data },
-      { href: 'il7', data: trimet.data },
-      { href: 'iounoi', data: trimet.data },
-      { href: 'precision-machines', data: trimet.data },
+      Object.assign({ href: 'trimet' }, trimet.data),
+      Object.assign({ href: 'fuzzy-chainsaw' }, trimet.data),
+      Object.assign({ href: 'spectrum-health' }, trimet.data),
+      Object.assign({ href: 'ca-portfolio' }, trimet.data),
+      Object.assign({ href: 'juniper-deception-force' }, trimet.data),
+      Object.assign({ href: 'webtrends-today' }, trimet.data),
+      Object.assign({ href: 'webtrends-prototypes' }, trimet.data),
+      Object.assign({ href: 'webtrends-streams' }, trimet.data),
+      Object.assign({ href: 'juniper-rap-battle' }, trimet.data),
+      Object.assign({ href: 'personal-prototypes' }, trimet.data),
+      Object.assign({ href: 'il7' }, trimet.data),
+      Object.assign({ href: 'iounoi' }, trimet.data),
+      Object.assign({ href: 'precision-machines' }, trimet.data),
     ]
   }
 }

@@ -1,18 +1,20 @@
 import Vue from 'vue';
+import cssReset from 'reset-css/reset.css';
 
-const tagContext = require.context('./tags/', true, /\.vue$/);
-const templateContext = require.context('./templates/', true, /\.vue$/);
 const context = require.context('./content/', true, /\.js$/);
-const getModule = path => {
-  if (path.indexOf('.html') !== -1) {
-    path = path.substr(0, path.length - '.html'.length);
-  }
 
-  return context('./' + path + '.js').default;
+const getRoute = path =>
+  path.indexOf('.html') !== -1
+    ? path.substr(0, path.length - '.html'.length)
+    : path;
+
+const getModule = path => {
+  return context('./' + getRoute(path) + '.js').default;
 }
 
 export default (locals, done) => {
   const { path, layout, renderer } = locals;
+  const route = getRoute(path);
   const module = getModule(path);
   const data = Object.assign({}, module.data, locals);
   const vm = new Vue({
@@ -27,8 +29,9 @@ export default (locals, done) => {
       done(
         null,
         layout
-          .replace('<title>{{$title}}</title>', `<title>${data.pageTitle}</title>`)
-          .replace('<div id="app">{{$app}}</div>', `<div id="app">${html}</div>`)
+          .replace('{{title}}', `${data.pageTitle}`)
+          .replace('{{app}}', `${html}`)
+          .replace('{{route}}', `${route}`)
       );
     }
   })

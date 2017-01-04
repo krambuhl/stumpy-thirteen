@@ -1,5 +1,5 @@
 <template>
-  <div class="homepage">
+  <div id="app" class="Homepage">
     <h1>Why, hello!</h1>
 
     <p>
@@ -10,7 +10,7 @@
 
     <p>We should make something together, just say hello.</p>
 
-    <p><img src="./assets/my-face.jpg" alt="this is my face" /></p>
+    <p><img width="320" src="./assets/my-face.jpg" alt="this is my face" /></p>
 
     <h2>I like</h2>
 
@@ -42,8 +42,9 @@
 </template>
 
 <style>
-.homepage { background-color: red; }
-h2 { font-weight: bold; }
+.Homepage {
+  background-color: #eee;
+}
 </style>
 
 <script>

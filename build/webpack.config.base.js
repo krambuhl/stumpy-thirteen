@@ -4,7 +4,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: {
-    bundle: './source/client.js',
+    client: './source/client.js'
   },
   publicPath: './dist/',
   output: {
@@ -25,10 +25,12 @@ module.exports = {
     loaders: [
       { test: /\.vue$/, loader: 'vue' },
       { test: /\.(jsx|js)$/, loader: 'babel?cacheDirectory=true', exclude: /node_modules/ },
+      { test: /\.css$/, loader: ExtractTextPlugin.extract('css') },
       { test: /\.md$/, loader: 'html!markdown' },
       { test: /\.json$/, loader: 'json' },
       { test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [
+          'responsive?name=/assets/images/[name]-[md5:hash:hex:8].',
           'file?context=./source/&name=/assets/images/[name]-[md5:hash:hex:8].[ext]',
           'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
         ]
@@ -41,6 +43,6 @@ module.exports = {
     }
   },
   plugins: [
-    new ExtractTextPlugin('/assets/bundle.css')
+    new ExtractTextPlugin('/assets/[name].css')
   ]
 }

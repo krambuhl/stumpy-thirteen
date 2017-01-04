@@ -1,9 +1,5 @@
-<template>
-  <div></div>
-</template>
-
 <style>
   body {
-    background-color: yellow;
+    font-family: monospace;
   }
 </style>

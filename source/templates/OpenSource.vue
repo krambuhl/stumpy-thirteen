@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app" class="OpenSource">
     <h1>Open source code</h1>
     <p>I maintain and contribute to a number of open source projects</p>
 

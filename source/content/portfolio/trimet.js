@@ -1,5 +1,5 @@
 import PortfolioProject from 'Templates/PortfolioProject';
-import thumbnailImage from 'responsive?sizes=720&sizes=1280!./assets/trimet-homepage.jpg'; //responsive?size=720!
+import thumbnailImage from './assets/trimet-homepage.jpg'; //responsive?size=720!
 import trimetHomepageImage from './assets/trimet-homepage.jpg';
 
 export default {
