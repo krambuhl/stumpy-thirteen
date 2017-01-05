@@ -26,7 +26,7 @@ module.exports = {
     loaders: [
       { test: /\.vue$/, loader: 'vue' },
       { test: /\.js$/, loader: 'babel?cacheDirectory=true', exclude: /node_modules/ },
-      { test: /\.css$/, loader: ExtractTextPlugin.extract('css') },
+      { test: /\.css$/, loader: 'style!css' },
       { test: /\.md$/, loader: 'html!markdown' },
       { test: /\.json$/, loader: 'json' },
       { test: /\.(jpe?g|png|gif|svg)$/i,
@@ -37,13 +37,5 @@ module.exports = {
         ]
       }
     ]
-  },
-  plugins: [
-    new ExtractTextPlugin('/assets/[name].css')
-  ],
-  vue: {
-    loaders: {
-      css: ExtractTextPlugin.extract('css')
-    }
   }
 }

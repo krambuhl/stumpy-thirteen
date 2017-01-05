@@ -4,6 +4,7 @@ const fs = require('fs');
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const baseConfig = require('./webpack.config.base');
 
@@ -22,7 +23,18 @@ module.exports = webpackMerge(baseConfig, {
   entry: {
     static: './source/static.js'
   },
+  module: {
+    loaders: [
+      { test: /\.css$/, loader: ExtractTextPlugin.extract('css') },
+    ]
+  },
   plugins: [
-    new StaticSiteGeneratorPlugin('static', paths, { layout, renderer })
-  ]
+    new StaticSiteGeneratorPlugin('static', paths, { layout, renderer }),
+    new ExtractTextPlugin('/assets/[name].css')
+  ],
+  vue: {
+    loaders: {
+      css: ExtractTextPlugin.extract('css')
+    }
+  }
 });

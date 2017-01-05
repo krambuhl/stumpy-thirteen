@@ -13,6 +13,6 @@
 
 <style>
   .Portfolio {
-    background-color: blue;
+    background-color: #ddd;
   }
 </style>
