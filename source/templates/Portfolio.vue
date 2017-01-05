@@ -11,4 +11,8 @@
   </div>
 </template>
 
-<style></style>
+<style>
+  .Portfolio {
+    background-color: blue;
+  }
+</style>

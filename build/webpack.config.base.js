@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
@@ -24,7 +25,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.vue$/, loader: 'vue' },
-      { test: /\.(jsx|js)$/, loader: 'babel?cacheDirectory=true', exclude: /node_modules/ },
+      { test: /\.js$/, loader: 'babel?cacheDirectory=true', exclude: /node_modules/ },
       { test: /\.css$/, loader: ExtractTextPlugin.extract('css') },
       { test: /\.md$/, loader: 'html!markdown' },
       { test: /\.json$/, loader: 'json' },
@@ -37,12 +38,12 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new ExtractTextPlugin('/assets/[name].css')
+  ],
   vue: {
     loaders: {
       css: ExtractTextPlugin.extract('css')
     }
-  },
-  plugins: [
-    new ExtractTextPlugin('/assets/[name].css')
-  ]
+  }
 }
