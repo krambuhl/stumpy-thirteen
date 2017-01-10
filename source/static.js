@@ -1,26 +1,24 @@
 import Vue from 'vue';
 import cssReset from 'reset-css/reset.css';
 
-const context = require.context('./content/', true, /\.js$/);
+const context = require.context('./content/', true, /\.vue$/);
 
 const getRoute = path =>
   path.indexOf('.html') !== -1
     ? path.substr(0, path.length - '.html'.length)
     : path;
 
-const getModule = path => {
-  return context('./' + getRoute(path) + '.js').default;
-}
+const getModule = path =>
+  context('./' + getRoute(path) + '.vue');
 
 export default (locals, done) => {
   const { path, layout, renderer } = locals;
   const route = getRoute(path);
   const module = getModule(path);
-  const data = Object.assign({}, module.data, locals);
+  const data = module.data()
+
   const vm = new Vue({
-    data,
-    render: module.template.render,
-    staticRenderFns: module.template.staticRenderFns
+    render: h => h(module)
   });
 
   renderer.renderToString(vm, (err, html) => {

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import cssReset from 'reset-css/reset.css';
 
-const content = require.context('./content/', true, /\.js$/);
+const content = require.context('./content/', true, /\.vue$/);
 
 // converts location.href to route
 const normalizeRoute = route => {
@@ -13,10 +13,11 @@ const normalizeRoute = route => {
   }
 }
 
-const module = content('./' + normalizeRoute(global.initialRoute) + '.js').default;
+const module = content('./' + normalizeRoute(global.initialRoute) + '.vue');
+const data = module.data();
 const vm = new Vue({
   el: '#app',
-  data: module.data,
-  render: module.template.render,
-  staticRenderFns: module.template.staticRenderFns
+  render: h => h(module)
 });
+
+document.title = data.pageTitle

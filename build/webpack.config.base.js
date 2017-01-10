@@ -26,13 +26,12 @@ module.exports = {
     loaders: [
       { test: /\.vue$/, loader: 'vue' },
       { test: /\.js$/, loader: 'babel?cacheDirectory=true', exclude: /node_modules/ },
-      { test: /\.css$/, loader: 'style!css' },
       { test: /\.md$/, loader: 'html!markdown' },
       { test: /\.json$/, loader: 'json' },
       { test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [
           'responsive?name=/assets/images/[name]-[md5:hash:hex:8].',
-          'file?context=./source/&name=/assets/images/[name]-[md5:hash:hex:8].[ext]',
+          // 'file?context=./source/&name=/assets/images/[name]-[md5:hash:hex:8].[ext]',
           'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
         ]
       }

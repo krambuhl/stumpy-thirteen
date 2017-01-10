@@ -12,3 +12,9 @@
     <p>Lorem ipsum Irure amet Excepteur adipisicing laborum in deserunt nulla ex nostrud amet amet pariatur et anim id enim fugiat ullamco culpa ut laborum laborum aliquip dolore veniam incididunt anim deserunt cillum ut sint aliquip ad veniam in.</p>
   </div>
 </template>
+
+<style>
+  .OpenSource {
+    background-color: blue;
+  }
+</style>

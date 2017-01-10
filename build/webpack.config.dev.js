@@ -16,5 +16,10 @@ module.exports = webpackMerge(baseConfig, {
       template: path.resolve(__dirname, 'templates/dev-template.html'),
       inject: true
     })
-  ]
+  ],
+  module: {
+    loaders: [
+      { test: /\.css$/, loader: 'style!css' },
+    ]
+  }
 })

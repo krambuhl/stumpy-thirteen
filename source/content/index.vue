@@ -1,21 +1,16 @@
 <template>
   <div id="app" class="Homepage">
     <h1>Why, hello!</h1>
-
     <p>
-      I am Evan Krambuhl
-      <br />
+      I am Evan Krambuhl <br />
       I make things on the internet
     </p>
-
     <p>We should make something together, just say hello.</p>
-
     <p><img width="320" src="./assets/my-face.jpg" alt="this is my face" /></p>
 
     <h2>I like</h2>
-
     <ul>
-      <li>Minimalism</li>
+      <li @click="minimalismClick">Minimalism</li>
       <li>Unix philosophy</li>
       <li>Javascript and Node</li>
       <li>Functional Programming</li>
@@ -41,12 +36,13 @@
   </div>
 </template>
 
-<style>
-.Homepage {
-  background-color: #eee;
-}
-</style>
-
 <script>
-  import Root from 'Tags/Root';
+export default {
+  data: () => ({
+    pageTitle: 'Stumptown Bear',
+    minimalismClick: function() {
+      console.log('hello');
+    }
+  })
+}
 </script>

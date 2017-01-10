@@ -10,6 +10,14 @@
 <body>
 
 <div id="app"></div>
-<script>window.initialRoute = location.pathname.split('/').filter(a => a.length).join('/');</script>
+
+<script>
+  window.initialRoute = (
+    location.pathname
+      .split('/')
+      .filter(a => a.length)
+      .join('/')
+  );
+</script>
 </body>
 </html>
