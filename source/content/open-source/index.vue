@@ -18,3 +18,13 @@
     background-color: blue;
   }
 </style>
+
+<script>
+export default {
+  data: function() {
+    return {
+      pageTitle: 'Open Source Code - Stumptown Bear'
+    }
+  }
+}
+</script>

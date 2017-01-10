@@ -18,7 +18,7 @@ module.exports = {
     extensions: ['', '.js', '.vue'],
     alias: {
       Content: path.resolve(__dirname, '..', 'source/content'),
-      Templates: path.resolve(__dirname, '..', 'source/templates'),
+      Components: path.resolve(__dirname, '..', 'source/components'),
       Tags: path.resolve(__dirname, '..', 'source/tags'),
     },
   },
@@ -31,7 +31,6 @@ module.exports = {
       { test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [
           'responsive?name=/assets/images/[name]-[md5:hash:hex:8].',
-          // 'file?context=./source/&name=/assets/images/[name]-[md5:hash:hex:8].[ext]',
           'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
         ]
       }

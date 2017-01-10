@@ -15,11 +15,7 @@ export default (locals, done) => {
   const { path, layout, renderer } = locals;
   const route = getRoute(path);
   const module = getModule(path);
-  const data = module.data()
-
-  const vm = new Vue({
-    render: h => h(module)
-  });
+  const vm = new Vue({ render: h => h(module) });
 
   renderer.renderToString(vm, (err, html) => {
     if (err) done(err);
@@ -27,7 +23,7 @@ export default (locals, done) => {
       done(
         null,
         layout
-          .replace('{{title}}', `${data.pageTitle}`)
+          .replace('{{title}}', `${module.data().pageTitle}`)
           .replace('{{app}}', `${html}`)
           .replace('{{route}}', `${route}`)
       );

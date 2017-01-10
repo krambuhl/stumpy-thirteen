@@ -1,5 +1,11 @@
 <template>
   <div id="app" class="Homepage">
+    <ul>
+      <li><a href="/portfolio">portfolio</a></li>
+      <li><a href="/open-source">open source</a></li>
+      <li><a href="/say-hello">say hello</a></li>
+    </ul>
+
     <h1>Why, hello!</h1>
     <p>
       I am Evan Krambuhl <br />
@@ -38,11 +44,13 @@
 
 <script>
 export default {
-  data: () => ({
-    pageTitle: 'Stumptown Bear',
-    minimalismClick: function() {
-      console.log('hello');
+  data: function() {
+    return {
+      pageTitle: 'Stumptown Bear',
+      minimalismClick: function() {
+        console.log('bye');
+      }
     }
-  })
+  }
 }
 </script>

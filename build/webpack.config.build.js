@@ -16,7 +16,7 @@ const renderer = require('vue-server-renderer').createRenderer();
 const paths =
   glob.sync(path.resolve(__dirname, '../source/content/**/*.vue'))
     .map(p => p.substr(path.resolve(__dirname, '../source/content/').length + 1))
-    .map(p => p.replace('.js', '.html'))
+    .map(p => p.replace('.vue', '.html'))
     .map(p => p.indexOf('index.html') === -1 ? p.replace('.html', '') : p)
 
 module.exports = webpackMerge(baseConfig, {
@@ -29,7 +29,7 @@ module.exports = webpackMerge(baseConfig, {
     ]
   },
   plugins: [
-    new StaticSiteGeneratorPlugin('static', ['index.html'], { layout, renderer }),
+    new StaticSiteGeneratorPlugin('static', paths, { layout, renderer }),
     new ExtractTextPlugin('/assets/[name].css')
   ],
   vue: {
