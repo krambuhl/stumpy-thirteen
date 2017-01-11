@@ -1,8 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
 
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
 module.exports = {
   entry: {
     client: './source/client.js'
@@ -17,6 +15,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.vue'],
     alias: {
+      Utils: path.resolve(__dirname, '..', 'source/utils'),
       Content: path.resolve(__dirname, '..', 'source/content'),
       Components: path.resolve(__dirname, '..', 'source/components'),
       Tags: path.resolve(__dirname, '..', 'source/tags'),
@@ -35,5 +34,8 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  postcss: () => [
+    require('postcss-cssnext')
+  ]
 }

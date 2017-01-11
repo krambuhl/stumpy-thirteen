@@ -1,4 +1,5 @@
 const path = require('path');
+
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -19,7 +20,7 @@ module.exports = webpackMerge(baseConfig, {
   ],
   module: {
     loaders: [
-      { test: /\.css$/, loader: 'style!css' },
+      { test: /\.css$/, loader: 'style!css!postcss' },
     ]
   }
 })

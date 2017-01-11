@@ -1,26 +1,29 @@
 <template>
-  <div id="app" class="PortfolioProject">
-    <h1>{{title}}</h1>
+  <page-wrapper class="portfolio-project" activeSection="portfolio">
+    <heading tagName="h1">{{title}}</heading>
     <p>{{year}} / <a v-bind:href="companyHref">{{company}}</a></p>
     <p><button v-bind:href="projectHref">visit website</button></p>
 
-    <div class="PortfolioProject_images">
-      <div v-for="image in projectImages" class="PortfolioProject_image">
-        <img :alt="image.alt" :src="image.asset.src" :srcset="image.asset.srcSet" />
+    <div class="portfolio-project__images">
+      <div v-for="image in projectImages" class="portfolio-project__image">
+        <image-set :alt="image.alt" :asset="image.asset" />
       </div>
     </div>
-  </div>
+  </page-wrapper>
 </template>
 
 <style>
-  .PortfolioProject {
-    background-color: red;
-  }
+  .portfolio-project { }
+  .portfolio-project__images { }
+  .portfolio-project__image > .image-set { width: 100%; }
 </style>
 
 <script>
+  import PageWrapper from 'Components/PageWrapper';
+  import Heading from 'Tags/Heading';
+  import ImageSet from 'Tags/ImageSet';
+
   export default {
-    name: 'portfolio-project',
     props: {
       title: String,
       year: Number,
@@ -28,6 +31,11 @@
       companyHref: String,
       projectHref: String,
       projectImages: Array
+    },
+    components: {
+      PageWrapper,
+      Heading,
+      ImageSet
     }
   }
 </script>

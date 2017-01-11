@@ -1,30 +1,39 @@
 <template>
-  <div id="app" class="OpenSource">
-    <h1>Open source code</h1>
-    <p>I maintain and contribute to a number of open source projects</p>
+  <page-wrapper class="open-source" activeSection="open-source">
+    <rhythm>
+      <heading tagName="h1">Open source code</heading>
+      <p>I maintain and contribute to a number of open source projects</p>
 
-    <h2><span>29</span> NPM repositories</h2>
-    <p>Lorem ipsum Irure amet Excepteur adipisicing laborum in deserunt nulla ex nostrud amet amet pariatur et anim id enim fugiat ullamco culpa ut laborum laborum aliquip dolore veniam incididunt anim deserunt cillum ut sint aliquip ad veniam in.</p>
-    <p>Lorem ipsum Irure amet Excepteur adipisicing laborum in deserunt nulla ex nostrud amet amet pariatur et anim id enim fugiat ullamco culpa ut laborum laborum aliquip dolore veniam incididunt anim deserunt cillum ut sint aliquip ad veniam in.</p>
+      <heading tagName="h2"><span>29</span> NPM repositories</heading>
+      <p>Lorem ipsum Irure amet Excepteur adipisicing laborum in deserunt nulla ex nostrud amet amet pariatur et anim id enim fugiat ullamco culpa ut laborum laborum aliquip dolore veniam incididunt anim deserunt cillum ut sint aliquip ad veniam in.</p>
+      <p>Lorem ipsum Irure amet Excepteur adipisicing laborum in deserunt nulla ex nostrud amet amet pariatur et anim id enim fugiat ullamco culpa ut laborum laborum aliquip dolore veniam incididunt anim deserunt cillum ut sint aliquip ad veniam in.</p>
 
-    <h3><span>109</span> Github repositories</h3>
-    <p>Lorem ipsum Irure amet Excepteur adipisicing laborum in deserunt nulla ex nostrud amet amet pariatur et anim id enim fugiat ullamco culpa ut laborum laborum aliquip dolore veniam incididunt anim deserunt cillum ut sint aliquip ad veniam in.</p>
-    <p>Lorem ipsum Irure amet Excepteur adipisicing laborum in deserunt nulla ex nostrud amet amet pariatur et anim id enim fugiat ullamco culpa ut laborum laborum aliquip dolore veniam incididunt anim deserunt cillum ut sint aliquip ad veniam in.</p>
-  </div>
+      <heading tagName="h3"><span>109</span> Github repositories</heading>
+      <p>Lorem ipsum Irure amet Excepteur adipisicing laborum in deserunt nulla ex nostrud amet amet pariatur et anim id enim fugiat ullamco culpa ut laborum laborum aliquip dolore veniam incididunt anim deserunt cillum ut sint aliquip ad veniam in.</p>
+      <p>Lorem ipsum Irure amet Excepteur adipisicing laborum in deserunt nulla ex nostrud amet amet pariatur et anim id enim fugiat ullamco culpa ut laborum laborum aliquip dolore veniam incididunt anim deserunt cillum ut sint aliquip ad veniam in.</p>
+    </rhythm>
+  </page-wrapper>
 </template>
 
 <style>
-  .OpenSource {
-    background-color: blue;
+  .open-source {
   }
 </style>
 
 <script>
-export default {
-  data: function() {
-    return {
-      pageTitle: 'Open Source Code - Stumptown Bear'
+  import PageWrapper from 'Components/PageWrapper';
+  import Heading from 'Tags/Heading';
+  import Rhythm from 'Tags/Rhythm';
+  export default {
+    data: function() {
+      return {
+        pageTitle: 'Open Source Code - Stumptown Bear'
+      }
+    },
+    components: {
+      PageWrapper,
+      Heading,
+      Rhythm
     }
   }
-}
 </script>

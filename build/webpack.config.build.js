@@ -1,6 +1,7 @@
 const glob = require('glob');
 const path = require('path');
 const fs = require('fs');
+
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
@@ -25,7 +26,7 @@ module.exports = webpackMerge(baseConfig, {
   },
   module: {
     loaders: [
-      { test: /\.css$/, loader: ExtractTextPlugin.extract('css') },
+      { test: /\.css$/, loader: ExtractTextPlugin.extract('css!postcss') },
     ]
   },
   plugins: [
@@ -34,7 +35,7 @@ module.exports = webpackMerge(baseConfig, {
   ],
   vue: {
     loaders: {
-      css: ExtractTextPlugin.extract('css')
+      css: ExtractTextPlugin.extract('css!postcss')
     }
   }
 });
