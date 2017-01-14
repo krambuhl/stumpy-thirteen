@@ -20,7 +20,12 @@ module.exports = webpackMerge(baseConfig, {
   ],
   module: {
     loaders: [
-      { test: /\.css$/, loader: 'style!css!postcss' },
+      { test: /\.css$/, loader: 'style!css!postcss' }
     ]
+  },
+  vue: {
+    loaders: {
+      css: 'style!css!postcss'
+    }
   }
 })
