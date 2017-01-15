@@ -1,7 +1,7 @@
 <template>
   <header class="mast-head">
     <wrapper class="mast-head__container">
-      <a class="mast-head__brand" :class="{'is-active':isHomepageActive}" href="/"><brand /></a>
+      <router-link class="mast-head__brand" :class="{'is-active':isHomepageActive}" to="/"><brand /></router-link>
       <navigation class="mast-head__navigation" :activeSection="activeSection" />
     </wrapper>
   </header>

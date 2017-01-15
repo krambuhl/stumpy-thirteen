@@ -1,21 +1,29 @@
 import Vue from 'vue';
-import cssReset from 'reset-css/reset.css';
-
-const context = require.context('./content/', true, /\.vue$/);
+import VueRouter from 'vue-router';
+import router from './router';
+import App from 'Components/App';
 
 const getRoute = path =>
   path.indexOf('.html') !== -1
     ? path.substr(0, path.length - '.html'.length)
     : path;
 
-const getModule = path =>
-  context('./' + getRoute(path) + '.vue');
-
 export default (locals, done) => {
   const { path, layout, renderer } = locals;
-  const route = getRoute(path);
-  const module = getModule(path);
-  const vm = new Vue({ render: h => h(module) });
+  const route = '/' + getRoute(path);
+  router.push(route);
+
+  const vm = new Vue({
+    router,
+    render: h => h(App)
+  });
+
+  let title;
+  try {
+    title = router.getMatchedComponents()[0].data().pageTitle;
+  } catch(e) {
+    title = 'Stumptown Bear';
+  }
 
   renderer.renderToString(vm, (err, html) => {
     if (err) done(err);
@@ -23,9 +31,9 @@ export default (locals, done) => {
       done(
         null,
         layout
-          .replace('{{title}}', `${module.data().pageTitle}`)
-          .replace('{{app}}', `${html}`)
-          .replace('{{route}}', `${route}`)
+          .replace('{{title}}', title)
+          .replace('{{app}}', html)
+          .replace('{{route}}', route)
       );
     }
   })

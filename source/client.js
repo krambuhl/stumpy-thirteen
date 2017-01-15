@@ -1,23 +1,12 @@
 import Vue from 'vue';
-import cssReset from 'reset-css/reset.css';
+import VueRouter from 'vue-router';
+import router from './router';
+import App from 'Components/App';
 
-const content = require.context('./content/', true, /\.vue$/);
+Vue.use(VueRouter)
 
-// converts location.href to route
-const normalizeRoute = route => {
-  switch (route) {
-    case '': return 'index';
-    case 'portfolio': return 'portfolio/index';
-    case 'open-source': return 'open-source/index';
-    default: return route;
-  }
-}
-
-const module = content('./' + normalizeRoute(global.initialRoute) + '.vue');
-const data = module.data();
 const vm = new Vue({
   el: '#app',
-  render: h => h(module)
+  router,
+  render: h => h(App)
 });
-
-document.title = data.pageTitle

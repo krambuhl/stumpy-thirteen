@@ -1,15 +1,4 @@
-<template>
-  <portfolio-project
-    :title="title"
-    :year="year"
-    :company="company"
-    :companyHref="companyHref"
-    :projectHref="projectHref"
-    :projectImages="projectImages" />
-</template>
-
 <script>
-  import PortfolioProject from 'Components/PortfolioProject';
   import trimetHomepageImage from './assets/trimet-homepage.jpg';
 
   export default {
@@ -26,9 +15,6 @@
           asset: trimetHomepageImage
         }]
       }
-    },
-    components: {
-      PortfolioProject
     }
   }
 </script>

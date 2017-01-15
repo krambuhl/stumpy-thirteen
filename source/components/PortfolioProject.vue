@@ -23,19 +23,32 @@
   import Heading from 'Tags/Heading';
   import ImageSet from 'Tags/ImageSet';
 
+  const content = require.context('Content/portfolio/', true, /\.vue$/);
+  const getComponent = name => content('./' + name + '.vue');
+
   export default {
-    props: {
-      title: String,
-      year: Number,
-      company: String,
-      companyHref: String,
-      projectHref: String,
-      projectImages: Array
-    },
     components: {
       PageWrapper,
       Heading,
       ImageSet
+    },
+    data() {
+      return {
+        data: getComponent(this.$route.params.projectId).data()
+      }
+    },
+    computed: {
+      title: function() { return this.data.title },
+      year: function() { return this.data.year },
+      company: function() { return this.data.company },
+      companyHref: function() { return this.data.companyHref },
+      projectHref: function() { return this.data.projectHref },
+      projectImages: function() { return this.data.projectImages }
+    },
+    watch: {
+      '$route' (to, from) {
+        console.log(from, to);
+      }
     }
   }
 </script>

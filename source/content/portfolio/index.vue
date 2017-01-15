@@ -4,7 +4,7 @@
     <p>A sampling of my contributions as a web developer and desginer</p>
     <div class="porfolio__list">
       <article v-for="project in projects" class="portfolio__project">
-        <a :href="'/portfolio/' + project.href">{{project.title}}</a>
+        <router-link :to="'/portfolio/' + project.href">{{project.title}}</router-link>
         <p>
           <img
             width="320"

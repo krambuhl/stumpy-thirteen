@@ -1,14 +1,14 @@
-/<template>
+<template>
   <nav class="navigation">
     <ul class="navigation__list">
       <li class="navigation__item navigation__item--portfolio" :class="{ 'is-active': isPortfolioActive }">
-        <a href="/portfolio">Portfolio</a>
+        <router-link to="/portfolio">Portfolio</router-link>
       </li>
       <li class="navigation__item navigation__item--open-source" :class="{ 'is-active': isOpenSourceActive }">
-        <a href="/open-source">Open Source</a>
+        <router-link to="/open-source">Open Source</router-link>
       </li>
       <li class="navigation__item navigation__item--say-hello" :class="{ 'is-active': isSayHelloActive }">
-        <a href="/say-hello">Say Hello</a>
+        <router-link to="/say-hello">Say Hello</router-link>
       </li>
     </ul>
   </nav>
