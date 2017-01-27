@@ -1,54 +1,94 @@
 <template>
-  <page-wrapper class="portfolio-project" activeSection="portfolio">
-    <heading tagName="h1">{{title}}</heading>
-    <p>{{year}} / <a v-bind:href="companyHref">{{company}}</a></p>
-    <p><button v-bind:href="projectHref">visit website</button></p>
+  <div class="portfolio-project">
+    <page-heading>
+      <heading class="portfolio-project_title">{{title}}</heading>
+      <p>{{year}} with <a :href="companyHref" class="portfolio-project_company" target="_blank">{{company}}</a></p>
+      <p class="portfolio-project_btn-wrapper">
+        <btn-link class="portfolio-project_btn" :href="projectHref" target="_blank">Visit website</btn-link>
+      </p>
+    </page-heading>
 
-    <div class="portfolio-project__images">
-      <div v-for="image in projectImages" class="portfolio-project__image">
+    <div class="portfolio-project_images">
+      <div v-for="image in projectImages" class="portfolio-project_image">
         <image-set :alt="image.alt" :asset="image.asset" />
       </div>
     </div>
-  </page-wrapper>
+  </div>
 </template>
 
 <style>
-  .portfolio-project { }
-  .portfolio-project__images { }
-  .portfolio-project__image > .image-set { width: 100%; }
+  .portfolio-project_title {
+    color: var(--color-green);
+  }
+
+  .portfolio-project_company {
+    color: var(--color-light);
+  }
+
+  .portfolio-project_btn-wrapper {
+    font-size: 0.65em;
+  }
+
+  .portfolio-project_btn {
+    margin-top: 1.25em;
+  }
+
+  .portfolio-project_images {
+    margin-top: 1em;
+
+    @media (--small) {
+      margin-top: 2em;
+    }
+
+    @media (--medium) {
+      margin-top: 4em;
+    }
+  }
+
+  .portfolio-project_image {
+    & + & { margin-top: 2em; }
+    & > .image-set { width: 100%; }
+  }
+
+  .portfolio-project_body {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+
+    & .btn-link {
+      border: 2px solid var(--color-green);
+      color: var(--color-green);
+
+      &:hover {
+        background-color: var(--color-green);
+        color: var(--color-light);
+      }
+    }
+  }
 </style>
 
 <script>
-  import PageWrapper from 'Components/PageWrapper';
-  import Heading from 'Tags/Heading';
+  import PageHeading from 'Components/PageHeading';
   import ImageSet from 'Tags/ImageSet';
-
-  const content = require.context('Content/portfolio/', true, /\.vue$/);
-  const getComponent = name => content('./' + name + '.vue');
+  import Heading from 'Tags/Heading';
+  import BtnLink from 'Tags/BtnLink';
 
   export default {
+    meta: {
+      bodyClass: 'portfolio-project_body body--dark'
+    },
     components: {
-      PageWrapper,
+      PageHeading,
+      ImageSet,
       Heading,
-      ImageSet
+      BtnLink
     },
-    data() {
-      return {
-        data: getComponent(this.$route.params.projectId).data()
-      }
-    },
-    computed: {
-      title: function() { return this.data.title },
-      year: function() { return this.data.year },
-      company: function() { return this.data.company },
-      companyHref: function() { return this.data.companyHref },
-      projectHref: function() { return this.data.projectHref },
-      projectImages: function() { return this.data.projectImages }
-    },
-    watch: {
-      '$route' (to, from) {
-        console.log(from, to);
-      }
+    props: {
+      title: String, //function() { return this.data.title },
+      year: Number, //function() { return this.data.year },
+      company: String, //function() { return this.data.company },
+      companyHref: String, //function() { return this.data.companyHref },
+      projectHref: String, //function() { return this.data.projectHref },
+      projectImages: Array, //function() { return this.data.projectImages }
     }
   }
 </script>

@@ -3,14 +3,30 @@
 </template>
 
 <style>
+  html {
+    font-family: 'Museo Sans Rounded';
+    font-size: 100%;
+
+    @media (--small) { font-size: 110%; }
+    @media (--medium) { font-size: 120%; }
+  }
+
   body {
     min-height: 100vh;
-    font-family: monospace;
-    font-size: 120%;
-    line-height: 1.4em;
+    line-height: 1.6em;
+  }
 
-    @media (min-width: 640px) { font-size: 130%; }
-    @media (min-width: 960px) { font-size: 150%; }
-    @media (min-width: 1440px) { font-size: 180%; }
+  p {
+    line-height: 1.6em;
+  }
+
+  ul, ol {
+    line-height: 1.2em;
+  }
+
+  a {
+    color: var(--color-dark);
+    text-decoration: underline;
   }
 </style>
+

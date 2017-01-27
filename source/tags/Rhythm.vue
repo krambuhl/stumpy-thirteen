@@ -19,7 +19,8 @@
 </script>
 
 <style>
-  .rhythm--small > * + * { margin-top: 0.5em; }
+  .rhythm--small > * + * { margin-top: 0.4em; }
   .rhythm--normal > * + * { margin-top: 1em; }
   .rhythm--large > * + * { margin-top: 1.5em; }
+  .rhythm--huge > * + * { margin-top: 3em; }
 </style>

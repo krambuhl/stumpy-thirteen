@@ -1,7 +1,10 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import router from './router';
+
+// order matters yo
+import cssReset from 'reset-css/reset.css';
 import App from 'Components/App';
+import router from './router';
 
 const getRoute = path =>
   path.indexOf('.html') !== -1
@@ -11,6 +14,8 @@ const getRoute = path =>
 export default (locals, done) => {
   const { path, layout, renderer } = locals;
   const route = '/' + getRoute(path);
+
+  // push path from static render
   router.push(route);
 
   const vm = new Vue({
@@ -18,12 +23,10 @@ export default (locals, done) => {
     render: h => h(App)
   });
 
-  let title;
+  let title = 'Stumptown Bear';
   try {
-    title = router.getMatchedComponents()[0].data().pageTitle;
-  } catch(e) {
-    title = 'Stumptown Bear';
-  }
+    title = router.getMatchedComponents()[0].meta.pageTitle;
+  } catch(e) { }
 
   renderer.renderToString(vm, (err, html) => {
     if (err) done(err);

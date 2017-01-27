@@ -1,9 +1,17 @@
 <template>
-  <i class="Icon" :class="['Icon_' + name]" />
+  <svg class="icon" :class="['icon--' + name]">
+    <use :xlink:href="'#icon-' + name"></use>
+  </svg>
 </template>
 
 <style>
-  .Icon {}
+  .icon {
+    display: inline-block;
+  }
+
+  .icon--fill {
+    background-color: var(--color-dark);
+  }
 </style>
 
 <script>

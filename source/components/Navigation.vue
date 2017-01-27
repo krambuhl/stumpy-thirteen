@@ -1,49 +1,51 @@
 <template>
   <nav class="navigation">
-    <ul class="navigation__list">
-      <li class="navigation__item navigation__item--portfolio" :class="{ 'is-active': isPortfolioActive }">
-        <router-link to="/portfolio">Portfolio</router-link>
-      </li>
-      <li class="navigation__item navigation__item--open-source" :class="{ 'is-active': isOpenSourceActive }">
-        <router-link to="/open-source">Open Source</router-link>
-      </li>
-      <li class="navigation__item navigation__item--say-hello" :class="{ 'is-active': isSayHelloActive }">
-        <router-link to="/say-hello">Say Hello</router-link>
-      </li>
-    </ul>
+    <router-link
+      class="navigation_item navigation_item--portfolio"
+      to="/portfolio">Portfolio</router-link>
+
+    <router-link
+      class="navigation_item navigation_item--open-source"
+      to="/open-source">Open Source</router-link>
+
+    <router-link
+      class="navigation_item navigation_item--say-hello"
+      to="/say-hello">Say Hello</router-link>
   </nav>
 </template>
 
 <style>
-  .navigation {}
-  .navigation__list {
+  .navigation {
     display: flex;
   }
-  .navigation__item {
-    & a {
-      display: block;
-      padding: 1em;
-      text-decoration: none;
+
+  .navigation_item {
+    display: block;
+    padding: var(--size-padding-half);
+    border-bottom: 2px solid transparent;
+    line-height: 1.2em;
+    text-decoration: none;
+
+    @media (--small) {
+      padding-left: var(--size-padding);
+      padding-right: var(--size-padding);
     }
 
-    &.is-active {
-      & a { text-decoration: underline; }
-    }
+    &.is-active-route { border-bottom: 2px solid var(--color-dark); }
   }
-  .navigation__item--portfolio a { color: green; }
-  .navigation__item--open-source a { color: blue; }
-  .navigation__item--say-hello a { color: red; }
+
+  .navigation_item--portfolio {
+    color: var(--color-green);
+    &.is-active-route { border-bottom: 2px solid var(--color-green); }
+  }
+
+  .navigation_item--open-source {
+    color: var(--color-blue);
+    &.is-active-route { border-bottom: 2px solid var(--color-blue); }
+  }
+
+  .navigation_item--say-hello {
+    color: var(--color-red);
+    &.is-active-route { border-bottom: 2px solid var(--color-light); }
+  }
 </style>
-
-<script>
-  export default {
-    props: {
-      activeSection: { type: String }
-    },
-    computed: {
-      isPortfolioActive: function() { return this.activeSection === 'portfolio'; },
-      isOpenSourceActive: function() { return this.activeSection === 'open-source'; },
-      isSayHelloActive: function() { return this.activeSection === 'say-hello'; },
-    }
-  }
-</script>

@@ -1,24 +1,14 @@
 <template>
-  <router-view></router-view>
+  <page-wrapper>
+    <router-view></router-view>
+  </page-wrapper>
 </template>
 
 <script>
+  import PageWrapper from 'Components/PageWrapper';
   export default {
-    data() {
-      return {}
-    },
-    watch: {
-      '$route': 'updateTitle'
-    },
-    methods: {
-      updateTitle() {
-        try {
-          const title = this.$router.getMatchedComponents()[0].data().pageTitle;
-          document.title = title;
-        } catch(e) {
-          document.title = 'Stumptown Bear';
-        }
-      }
+    components: {
+      PageWrapper
     }
   }
 </script>

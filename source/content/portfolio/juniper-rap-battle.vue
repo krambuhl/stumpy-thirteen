@@ -10,23 +10,23 @@
 
 <script>
   import PortfolioProject from 'Components/PortfolioProject';
-  import trimetHomepageImage from './assets/trimet-homepage.jpg';
+  import image from './assets/juniper-rap-battle.jpg';
 
   export default {
     meta: {
       ...PortfolioProject.meta,
-      pageTitle: 'Trimet.org - Stumptown Bear'
+      pageTitle: 'Data Center Rap Battle - Stumptown Bear'
     },
     data() {
       return {
-        title: 'Trimet.org redesign',
-        year: 2015,
-        company: 'TriMet',
-        companyHref: 'http://trimet.org',
-        projectHref: 'http://trimet.org',
+        title: 'Juniper Data Center Rap Battle',
+        year: 2014,
+        company: 'John McNeil Studio',
+        companyHref: 'http://www.johnmcneilstudio.com/',
+        projectHref: 'http://datacenterrapbattle.com/',
         projectImages: [{
-          alt: 'Trimet.org hompage tools',
-          asset: trimetHomepageImage
+          alt: 'Landing page',
+          asset: image
         }]
       }
     },

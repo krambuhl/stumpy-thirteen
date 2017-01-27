@@ -21,6 +21,10 @@ const paths =
     .map(p => p.indexOf('index.html') === -1 ? p.replace('.html', '') : p)
 
 module.exports = webpackMerge(baseConfig, {
+  stats: {
+    colors: true,
+    children: false
+  },
   entry: {
     static: './source/static.js'
   },

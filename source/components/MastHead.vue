@@ -1,8 +1,8 @@
 <template>
   <header class="mast-head">
-    <wrapper class="mast-head__container">
-      <router-link class="mast-head__brand" :class="{'is-active':isHomepageActive}" to="/"><brand /></router-link>
-      <navigation class="mast-head__navigation" :activeSection="activeSection" />
+    <wrapper class="mast-head_container" variant="normal no-padding">
+      <router-link class="mast-head_brand" to="/"><brand /></router-link>
+      <navigation class="mast-head_navigation" />
     </wrapper>
   </header>
 </template>
@@ -10,26 +10,37 @@
 <style>
   .mast-head {
     position: relative;
-    border-bottom: 1px solid #eee;
+  }
+
+  .mast-head_container {
+    display: flex;
+    justify-content: space-between;
     font-size: 0.85rem;
   }
 
-  .mast-head__container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .mast-head__brand {
-    padding: 1em;
+  .mast-head_brand {
+    padding: var(--size-padding-half);
     text-decoration: none;
     color: black;
 
-    &.is-active {
-      text-decoration: underline;
+    @media (--small) {
+      padding-left: var(--size-padding);
+      padding-right: var(--size-padding);
     }
   }
 
-  .mast-head__navigation {
+  .mast-head_navigation {
+  }
+
+  .body--dark {
+    & .mast-head svg { fill: var(--color-light); }
+    & .brand { color: var(--color-light); }
+  }
+
+  .say-hello__body {
+    & .mast-head {
+      & a { color: var(--color-light); }
+    }
   }
 </style>
 
@@ -39,12 +50,6 @@
   import Wrapper from 'Tags/Wrapper';
 
   export default {
-    props: {
-      activeSection: { type: String }
-    },
-    computed: {
-      isHomepageActive: function() { return this.activeSection === 'homepage' }
-    },
     components: {
       Navigation,
       Brand,

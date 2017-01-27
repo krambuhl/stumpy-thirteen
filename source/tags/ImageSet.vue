@@ -9,7 +9,11 @@
 </template>
 
 <style>
-  .image-set { width: 100%; }
+  .image-set {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 1em;
+    border-radius: 4px;
+  }
 </style>
 
 <script>

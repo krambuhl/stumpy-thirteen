@@ -9,7 +9,14 @@ const baseConfig = require('./webpack.config.base');
 module.exports = webpackMerge(baseConfig, {
   devServer: {
     inline: true,
-    historyApiFallback: true
+    historyApiFallback: true,
+    stats: {
+      colors: true,
+      chunks: false,
+      hash: false,
+      version: false,
+      children: false
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({
