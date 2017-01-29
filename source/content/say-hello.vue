@@ -6,10 +6,26 @@
     </rhythm>
 
     <rhythm variant="small">
-      <p>Email <span class="say-hello_arrow">&mdash;&gt;</span> <a href="mailto:evan.krambuhl@gmail.com">evan.krambuhl@gmail.com</a></p>
-      <p>Twitter <span class="say-hello_arrow">&mdash;&gt;</span> <a href="https://twitter.com/evan_is">@evan_is</a></p>
-      <p>Github <span class="say-hello_arrow">&mdash;&gt;</span> <a href="https://github.com/krambuhl">krambuhl</a></p>
-      <p>NPM <span class="say-hello_arrow">&mdash;&gt;</span> <a href="https://www.npmjs.com/~krambuhl">krambuhl</a></p>
+      <p>
+        Email
+        <span class="say-hello_arrow">&mdash;&gt;</span>
+        <a href="mailto:evan.krambuhl@gmail.com" target="_blank">evan.krambuhl@gmail.com</a>
+      </p>
+      <p>
+        Twitter
+        <span class="say-hello_arrow">&mdash;&gt;</span>
+        <a href="https://twitter.com/evan_is" target="_blank">@evan_is</a>
+        </p>
+      <p>
+        Github
+        <span class="say-hello_arrow">&mdash;&gt;</span>
+        <a href="https://github.com/krambuhl" target="_blank">krambuhl</a>
+      </p>
+      <p>
+        NPM
+        <span class="say-hello_arrow">&mdash;&gt;</span>
+        <a href="https://www.npmjs.com/~krambuhl" target="_blank">krambuhl</a>
+      </p>
     </rhythm>
 
     <rhythm class="say-hello_message" variant="small">

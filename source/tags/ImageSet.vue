@@ -1,7 +1,7 @@
 <template>
   <img
     class="image-set"
-    :src="asset.placeholder"
+    :src="typeof asset === 'string' ? asset : asset.src"
     :srcset="asset.srcSet"
     :alt="alt"
     :width="width || asset.width"

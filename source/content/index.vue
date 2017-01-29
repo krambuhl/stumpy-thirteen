@@ -1,4 +1,4 @@
-<template>
+  <template>
   <rhythm class="homepage" variant="large">
     <heading tagName="h1">Why, hello there!</heading>
 
@@ -17,6 +17,7 @@
     </wrapper>
 
     <heading tagName="h2">I like</heading>
+
     <ul class="rhythm--small">
       <li>Minimalism</li>
       <li>Unix philosophy</li>

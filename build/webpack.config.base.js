@@ -32,18 +32,6 @@ module.exports = {
       { test: /\.js$/, loader: 'babel?cacheDirectory=true', exclude: /node_modules/ },
       { test: /\.md$/, loader: 'html!markdown' },
       { test: /\.json$/, loader: 'json' },
-      { test: /\.(jpe?g|png)$/i,
-        loaders: [
-          'responsive?name=/assets/images/[name]-[md5:hash:hex:8].',
-          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-        ]
-      },
-      { test: /\.gif$/i,
-        loaders: [
-          'file?context=./source/&name=/assets/images/[name]-[md5:hash:hex:8].[ext]',
-          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-        ]
-      },
       { test: /\.svg$/i,
         loaders: [
           'file?context=./source/&name=/assets/svgs/[name]-[md5:hash:hex:8].[ext]',

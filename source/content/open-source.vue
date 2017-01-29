@@ -14,7 +14,7 @@
 
         <rhythm variant="small">
           <div v-for="module in npmData" class="open-source_project">
-            <a :href="module.url">{{module.name}}</a>
+            <a :href="module.url" target="_blank">{{module.name}}</a>
             <span class="open-source_dash">&ndash;</span>
             <strong class="open-source_version">{{module.version}}</strong>
             <span class="open-source_dash">&ndash;</span>
@@ -33,7 +33,7 @@
 
         <rhythm variant="small">
           <div v-for="module in githubData" class="open-source_project">
-            <a :href="module.url">{{module.name}}</a>
+            <a :href="module.url" target="_blank">{{module.name}}</a>
             <span v-if="module.language" class="open-source_language">
               <span class="open-source_dash">&ndash;</span>
               {{module.language}}
