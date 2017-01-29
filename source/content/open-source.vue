@@ -12,7 +12,7 @@
           NPM repositories
         </heading>
 
-        <rhythm variant="small">
+        <rhythm variant="tiny">
           <div v-for="module in npmData" class="open-source_project">
             <a :href="module.url" target="_blank">{{module.name}}</a>
             <span class="open-source_dash">&ndash;</span>
@@ -31,9 +31,9 @@
           Github repositories
         </heading>
 
-        <rhythm variant="small">
+        <rhythm variant="tiny">
           <div v-for="module in githubData" class="open-source_project">
-            <a :href="module.url" target="_blank">{{module.name}}</a>
+            <a :href="module.url" target="_blank">{{module.fullname.replace('krambuhl/', '')}}</a>
             <span v-if="module.language" class="open-source_language">
               <span class="open-source_dash">&ndash;</span>
               {{module.language}}
@@ -99,6 +99,8 @@
   .open-source_project {
     padding-left: 1em;
     text-indent: -1em;
+
+    line-height: 1.6em;
 
     @media (--medium) {
       padding-left: 2em;

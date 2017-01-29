@@ -73,6 +73,7 @@ Promise.all([
         return all.concat(resSet.map(module => {
           return {
             name: module.name,
+            fullname: module.full_name,
             description: module.description,
             lastUpdated: module.updated_at,
             url: module.html_url,
@@ -81,10 +82,10 @@ Promise.all([
           }
         }));
       }, []).sort((a, b) => {
-        if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
-        if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
+        if (a.fullname.toLowerCase() < b.fullname.toLowerCase()) return -1;
+        if (a.fullname.toLowerCase() > b.fullname.toLowerCase()) return 1;
         return 0;
-      });
+      })
 
       fs.writeFile(githubDataFile, JSON.stringify(output, null, 2), (err) => {
         if (err) reject(err);
