@@ -109,7 +109,6 @@
   .open-source_version,
   .open-source_language {
     color: color(var(--color-dark) lightness(50%));
-
   }
 
   .open-source_body {

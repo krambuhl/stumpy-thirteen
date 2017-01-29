@@ -16,7 +16,7 @@ export default (locals, done) => {
   const route = '/' + getRoute(path);
 
   // push path from static render
-  router.push(route);
+  router.push(route === '/index' ? '/' : route);
 
   const vm = new Vue({
     router,
@@ -24,8 +24,11 @@ export default (locals, done) => {
   });
 
   let title = 'Stumptown Bear';
+  let bodyClass = '';
+
   try {
     title = router.getMatchedComponents()[0].meta.pageTitle;
+    bodyClass = router.getMatchedComponents()[0].meta.bodyClass;
   } catch(e) { }
 
   renderer.renderToString(vm, (err, html) => {
@@ -37,6 +40,7 @@ export default (locals, done) => {
           .replace('{{title}}', title)
           .replace('{{app}}', html)
           .replace('{{route}}', route)
+          .replace('{{bodyClass}}', bodyClass)
       );
     }
   })

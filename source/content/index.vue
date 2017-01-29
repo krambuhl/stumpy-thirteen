@@ -13,12 +13,12 @@
     </p>
 
     <wrapper class="homepage_image" variant="narrow">
-      <image-set width="320" :asset="myFaceImage" alt="this is my face" />
+      <image-set :asset="myFaceImage" alt="this is my face" />
     </wrapper>
 
     <heading tagName="h2">I like</heading>
     <ul class="rhythm--small">
-      <li @click="minimalismClick">Minimalism</li>
+      <li>Minimalism</li>
       <li>Unix philosophy</li>
       <li>Javascript and Node</li>
       <li>Functional Programming</li>
@@ -92,13 +92,10 @@
 
   export default {
     meta: {
-      pageTitle: 'Stumptown Bear'
+      pageTitle: 'Home - Stumptown Bear'
     },
     data() {
       return {
-        minimalismClick: function() {
-          console.log('bye');
-        },
         myFaceImage
       }
     },

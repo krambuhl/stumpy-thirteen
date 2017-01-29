@@ -16,7 +16,7 @@ const projectRoutes =
 export default new Router({
   mode: 'history',
   routes: [
-    { path: '/', alias: '/index', name: 'home', component: require('Content/index') },
+    { path: '/', name: 'home', component: require('Content/index') },
     { path: '/open-source', alias: '/open-source/index', component: require('Content/open-source') },
     { path: '/say-hello', alias: '/say-hello/index', component: require('Content/say-hello') },
     { path: '/portfolio', alias: '/portfolio/index', component: require('Content/portfolio') },

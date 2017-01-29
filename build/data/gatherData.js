@@ -86,8 +86,6 @@ Promise.all([
         return 0;
       });
 
-      console.log(output.map(a => a.name))
-
       fs.writeFile(githubDataFile, JSON.stringify(output, null, 2), (err) => {
         if (err) reject(err);
         resolve();

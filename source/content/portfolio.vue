@@ -47,7 +47,6 @@
     border-radius: 6px;
     margin-bottom: var(--size-padding-double);
 
-
     transition: background-color 0.3s ease;
 
     &:hover {
@@ -75,7 +74,7 @@
     left: 0;
     right: 0;
 
-    padding: var(--size-padding-double) var(--size-padding-double) 8em;
+    padding: var(--size-padding-double) var(--size-padding-double) 12em;
     font-size: 0.8em;
     text-align: left;
 
@@ -83,7 +82,8 @@
     color: var(--color-light);
     background-image: linear-gradient(
       to bottom,
-      color(var(--color-dark) alpha(95%)) 25%,
+      color(var(--color-dark) alpha(100%)) 0%,
+      color(var(--color-dark) alpha(80%)) 25%,
       color(var(--color-dark) alpha(0%)) 100%
     );
 
@@ -95,7 +95,7 @@
     }
 
     @media (--medium) {
-      padding: var(--size-padding-triple) var(--size-padding-triple) 8em;
+      padding: var(--size-padding-triple) var(--size-padding-triple) 12em;
     }
   }
 
