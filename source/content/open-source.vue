@@ -9,7 +9,7 @@
       <rhythm>
         <heading tagName="h2" class="open-source_sub-title">
           <span>{{npmData.length}}</span>
-          NPM repositories
+          NPM modules
         </heading>
 
         <rhythm variant="tiny">
