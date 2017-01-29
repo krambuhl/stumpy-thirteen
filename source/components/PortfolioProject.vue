@@ -3,8 +3,8 @@
     <page-heading>
       <heading class="portfolio-project_title">{{title}}</heading>
       <p>{{year}} with <a :href="companyHref" class="portfolio-project_company" target="_blank">{{company}}</a></p>
-      <p class="portfolio-project_btn-wrapper">
-        <btn-link class="portfolio-project_btn" :href="projectHref" target="_blank">Visit website</btn-link>
+      <p v-if="projectHref" class="portfolio-project_btn-wrapper">
+        <btn-link class="portfolio-project_btn" :href="projectHref" target="_blank">Visit project</btn-link>
       </p>
     </page-heading>
 

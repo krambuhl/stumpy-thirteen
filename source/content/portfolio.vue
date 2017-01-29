@@ -110,11 +110,21 @@
   import Heading from 'Tags/Heading';
   import ImageSet from 'Tags/ImageSet';
 
-  // projects
+  // professional projects
   import trimet from './portfolio/trimet';
+  import spectrumHealth from './portfolio/spectrum-health';
   import caPortfolio from './portfolio/ca-portfolio';
   import juniperDeceptionForce from './portfolio/juniper-deception-force';
   import juniperRapBattle from './portfolio/juniper-rap-battle';
+  import webtrendsToday from './portfolio/webtrends-today';
+  import webtrendsStreams from './portfolio/webtrends-streams';
+  import webtrendsPrototypes from './portfolio/webtrends-prototypes';
+
+  // personal project
+  import il7 from './portfolio/il7';
+  import iounoi from './portfolio/iounoi';
+  import precisionMachines from './portfolio/precision-machines';
+  import designPrototypes from './portfolio/design-prototypes';
 
   export default {
     meta: {
@@ -124,18 +134,17 @@
       return {
         projects: [
           Object.assign({ href: 'trimet' }, trimet.data()),
-          // Object.assign({ href: 'fuzzy-chainsaw' }, trimet.data()),
-          // Object.assign({ href: 'spectrum-health' }, trimet.data()),
+          Object.assign({ href: 'spectrum-health' }, spectrumHealth.data()),
           Object.assign({ href: 'ca-portfolio' }, caPortfolio.data()),
           Object.assign({ href: 'juniper-deception-force' }, juniperDeceptionForce.data()),
           Object.assign({ href: 'juniper-rap-battle' }, juniperRapBattle.data()),
-          Object.assign({ href: 'webtrends-today' }, juniperRapBattle.data()),
-          Object.assign({ href: 'webtrends-streams' }, trimet.data()),
-          Object.assign({ href: 'webtrends-prototypes' }, trimet.data()),
-          Object.assign({ href: 'personal-prototypes' }, trimet.data()),
-          Object.assign({ href: 'il7' }, caPortfolio.data()),
-          Object.assign({ href: 'iounoi' }, trimet.data()),
-          Object.assign({ href: 'precision-machines' }, caPortfolio.data()),
+          Object.assign({ href: 'webtrends-today' }, webtrendsToday.data()),
+          Object.assign({ href: 'webtrends-streams' }, webtrendsStreams.data()),
+          Object.assign({ href: 'webtrends-prototypes' }, webtrendsPrototypes.data()),
+          Object.assign({ href: 'design-prototypes' }, designPrototypes.data()),
+          Object.assign({ href: 'il7' }, il7.data()),
+          Object.assign({ href: 'iounoi' }, iounoi.data()),
+          Object.assign({ href: 'precision-machines' }, precisionMachines.data()),
         ]
       }
     },

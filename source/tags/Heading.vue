@@ -17,7 +17,7 @@
 
 <style>
   .heading {
-    font-weight: bold;
+    font-weight: 900;
     line-height: 1.3em;
   }
 

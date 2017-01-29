@@ -4,6 +4,7 @@ const baseConfig = require('./webpack.config.build');
 
 module.exports = webpackMerge(baseConfig, {
   responsiveLoader: {
+    placeholder: true,
     sizes: [720, 1280, 1920]
   },
   plugins: [
@@ -12,5 +13,9 @@ module.exports = webpackMerge(baseConfig, {
         'NODE_ENV': JSON.stringify('production')
       }
     })
+  ],
+  postcss: () => [
+    ...baseConfig.postcss(),
+    require('cssnano')
   ]
 })

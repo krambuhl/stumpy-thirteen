@@ -1,11 +1,12 @@
 <template>
   <img
     class="image-set"
-    :src="asset.src"
+    :src="asset.placeholder"
     :srcset="asset.srcSet"
     :alt="alt"
     :width="width"
-    :height="height" />
+    :height="height"
+    :style="{ backgroundImage: `url(${asset.placeholder})` }" />
 </template>
 
 <style>
@@ -13,6 +14,7 @@
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.2) 0 0 1em;
     border-radius: 4px;
+    background-size: cover;
   }
 </style>
 

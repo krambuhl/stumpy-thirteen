@@ -71,6 +71,9 @@ module.exports = {
       }
     })
   ],
+  responsiveLoader: {
+    placeholder: true
+  },
   postcss: () => [
     require('postcss-cssnext')({
       features: {
