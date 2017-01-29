@@ -10,6 +10,7 @@
 
 <script>
   import PortfolioProject from 'Components/PortfolioProject';
+  import imageHome from './assets/spectrum-home.png';
   import imageSearch from './assets/spectrum-search.png';
   import imageEvents from './assets/spectrum-events.png';
 
@@ -26,6 +27,9 @@
         companyHref: 'https://www.connectivedx.com/',
         projectHref: 'http://www.spectrumhealth.org/',
         projectImages: [{
+          alt: 'Homepage',
+          asset: imageHome
+        }, {
           alt: 'Search application',
           asset: imageSearch
         }, {
