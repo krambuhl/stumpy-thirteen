@@ -93,7 +93,7 @@
 
   export default {
     meta: {
-      pageTitle: 'Home - Stumptown Bear'
+      pageTitle: 'Stumptown Bear'
     },
     data() {
       return {
