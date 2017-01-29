@@ -1,5 +1,5 @@
 <template>
-  <wrapper class="page-heading">
+  <wrapper class="page-heading" variant="no-padding">
     <rhythm variant="small">
       <slot></slot>
     </rhythm>

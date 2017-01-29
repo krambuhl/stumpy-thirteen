@@ -24,7 +24,7 @@ router.afterEach((to, routeFrom, done) => {
   if (toMeta.bodyClass) toMeta.bodyClass.split(' ').forEach(cls => document.body.classList.add(cls))
 })
 
-const vm = new Vue({
+new Vue({
   el: '#app',
   router,
   render: h => h(App)

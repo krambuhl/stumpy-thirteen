@@ -21,8 +21,8 @@
       return {
         title: 'IL7 Logo',
         year: 2014,
-        company: 'IL7',
-        companyHref: 'https://github.com/il7',
+        company: 'Stumptown Bear',
+        companyHref: 'http://stumptownbear.com',
         projectHref: 'https://github.com/il7',
         projectImages: [{
           alt: 'IL7 Logo',

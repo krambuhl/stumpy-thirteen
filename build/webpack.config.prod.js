@@ -12,7 +12,8 @@ module.exports = webpackMerge(baseConfig, {
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
       }
-    })
+    }),
+    new webpack.optimize.UglifyJsPlugin()
   ],
   postcss: () => [
     ...baseConfig.postcss(),

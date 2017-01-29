@@ -1,0 +1,882 @@
+[
+  {
+    "name": "appleseed",
+    "description": null,
+    "lastUpdated": "2016-09-22T05:58:16Z",
+    "url": "https://github.com/krambuhl/appleseed",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "atlas",
+    "description": null,
+    "lastUpdated": "2016-05-22T03:59:21Z",
+    "url": "https://github.com/il7/atlas",
+    "language": "JavaScript",
+    "stars": 1
+  },
+  {
+    "name": "Backbone.Tendon",
+    "description": "Backbone.Tendon is a small set of Backbone objects to quickly get off the ground.",
+    "lastUpdated": "2014-07-19T06:13:31Z",
+    "url": "https://github.com/krambuhl/Backbone.Tendon",
+    "language": "JavaScript",
+    "stars": 2
+  },
+  {
+    "name": "bind-box",
+    "description": "A box full of strategies for binding objects of all sorts",
+    "lastUpdated": "2015-05-12T12:40:16Z",
+    "url": "https://github.com/krambuhl/bind-box",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "Bobsled",
+    "description": "html5/css based slider",
+    "lastUpdated": "2013-10-19T16:09:48Z",
+    "url": "https://github.com/krambuhl/Bobsled",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "choppin-broccoli",
+    "description": "Broccoli based build stuffs",
+    "lastUpdated": "2015-03-12T07:10:23Z",
+    "url": "https://github.com/krambuhl/choppin-broccoli",
+    "language": "CSS",
+    "stars": 0
+  },
+  {
+    "name": "coat",
+    "description": "html needs a coat",
+    "lastUpdated": "2015-08-20T07:17:17Z",
+    "url": "https://github.com/krambuhl/coat",
+    "language": null,
+    "stars": 0
+  },
+  {
+    "name": "consolidate.js",
+    "description": "Template engine consolidation library for node.js",
+    "lastUpdated": "2016-03-28T06:34:31Z",
+    "url": "https://github.com/krambuhl/consolidate.js",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "contact-card",
+    "description": "Need a new pair of shoes. ",
+    "lastUpdated": "2015-01-23T09:14:35Z",
+    "url": "https://github.com/krambuhl/contact-card",
+    "language": "CSS",
+    "stars": 0
+  },
+  {
+    "name": "custom-event-polyfill",
+    "description": "Polyfill for creating CustomEvents on IE9/10/11 if native implementation is missing.",
+    "lastUpdated": "2017-01-24T19:57:26Z",
+    "url": "https://github.com/krambuhl/custom-event-polyfill",
+    "language": "JavaScript",
+    "stars": 41
+  },
+  {
+    "name": "date-grab",
+    "description": "Functionally grab properties of a date object",
+    "lastUpdated": "2015-06-04T05:10:16Z",
+    "url": "https://github.com/krambuhl/date-grab",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "dopl",
+    "description": "A tool for making a copy of a copy of a copy",
+    "lastUpdated": "2016-10-29T20:07:25Z",
+    "url": "https://github.com/krambuhl/dopl",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "dropasaur",
+    "description": "tiny jquery plugin for extending drop down and menu behavior.",
+    "lastUpdated": "2013-10-02T06:44:47Z",
+    "url": "https://github.com/krambuhl/dropasaur",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "elm-adventures",
+    "description": "Let's explore the elm tree.",
+    "lastUpdated": "2016-05-04T15:15:46Z",
+    "url": "https://github.com/krambuhl/elm-adventures",
+    "language": "Elm",
+    "stars": 0
+  },
+  {
+    "name": "fallingsun.pm",
+    "description": "Precision Machines 'Falling Sun' album release website.",
+    "lastUpdated": "2014-06-11T16:53:16Z",
+    "url": "https://github.com/krambuhl/fallingsun.pm",
+    "language": "CSS",
+    "stars": 0
+  },
+  {
+    "name": "fe-component",
+    "description": "Iron. A front-end component module.",
+    "lastUpdated": "2016-04-15T03:15:07Z",
+    "url": "https://github.com/krambuhl/fe-component",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "fe-task-styles",
+    "description": null,
+    "lastUpdated": "2016-04-17T06:29:14Z",
+    "url": "https://github.com/krambuhl/fe-task-styles",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "Fireplate",
+    "description": "Boilerplate for Ember based applications",
+    "lastUpdated": "2014-01-07T16:00:35Z",
+    "url": "https://github.com/krambuhl/Fireplate",
+    "language": null,
+    "stars": 0
+  },
+  {
+    "name": "forest-bear",
+    "description": null,
+    "lastUpdated": "2016-09-18T20:29:55Z",
+    "url": "https://github.com/krambuhl/forest-bear",
+    "language": null,
+    "stars": 0
+  },
+  {
+    "name": "Formi",
+    "description": "Functional API for javascript.",
+    "lastUpdated": "2015-01-03T06:59:17Z",
+    "url": "https://github.com/krambuhl/Formi",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "functional-predicates",
+    "description": "Library for creating common predicates.",
+    "lastUpdated": "2015-06-02T10:11:56Z",
+    "url": "https://github.com/krambuhl/functional-predicates",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "functional-ui-programming",
+    "description": "Maybe it's a book on functional ui programming",
+    "lastUpdated": "2016-08-18T01:39:00Z",
+    "url": "https://github.com/krambuhl/functional-ui-programming",
+    "language": null,
+    "stars": 0
+  },
+  {
+    "name": "fuzzy-chainsaw",
+    "description": null,
+    "lastUpdated": "2017-01-16T17:43:08Z",
+    "url": "https://github.com/connectivedx/fuzzy-chainsaw",
+    "language": "JavaScript",
+    "stars": 6
+  },
+  {
+    "name": "fuzzy-rucksack",
+    "description": "Tools for fuzzy-chainsaw ",
+    "lastUpdated": "2016-12-28T06:58:41Z",
+    "url": "https://github.com/krambuhl/fuzzy-rucksack",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "ganglion",
+    "description": "A server full of data.",
+    "lastUpdated": "2015-01-28T10:00:16Z",
+    "url": "https://github.com/krambuhl/ganglion",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "ganglion-amyx",
+    "description": "Ganglion collector",
+    "lastUpdated": "2015-02-14T07:26:29Z",
+    "url": "https://github.com/krambuhl/ganglion-amyx",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "ganglion-licklider",
+    "description": "Ganglion socket server",
+    "lastUpdated": "2015-01-29T06:58:19Z",
+    "url": "https://github.com/krambuhl/ganglion-licklider",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "gates",
+    "description": "Logic gates",
+    "lastUpdated": "2015-06-02T08:31:01Z",
+    "url": "https://github.com/krambuhl/gates",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "gulo",
+    "description": "Views built with code instead of configurations.",
+    "lastUpdated": "2015-09-30T03:10:37Z",
+    "url": "https://github.com/krambuhl/gulo",
+    "language": null,
+    "stars": 0
+  },
+  {
+    "name": "hairy-machete",
+    "description": null,
+    "lastUpdated": "2016-10-07T23:58:12Z",
+    "url": "https://github.com/krambuhl/hairy-machete",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "hogan.js",
+    "description": "A compiler for the Mustache templating language",
+    "lastUpdated": "2016-01-24T06:58:13Z",
+    "url": "https://github.com/krambuhl/hogan.js",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "hookie",
+    "description": "Simple function lifecycle hooks",
+    "lastUpdated": "2015-05-07T06:04:36Z",
+    "url": "https://github.com/krambuhl/hookie",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "how-to-front-end",
+    "description": "Let's learn to front end",
+    "lastUpdated": "2014-09-04T05:40:24Z",
+    "url": "https://github.com/krambuhl/how-to-front-end",
+    "language": null,
+    "stars": 0
+  },
+  {
+    "name": "Kask",
+    "description": "A command interface",
+    "lastUpdated": "2015-09-30T05:51:35Z",
+    "url": "https://github.com/krambuhl/Kask",
+    "language": null,
+    "stars": 0
+  },
+  {
+    "name": "kerno",
+    "description": "A core event object to be extended further",
+    "lastUpdated": "2015-05-12T11:18:39Z",
+    "url": "https://github.com/krambuhl/kerno",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "kombini",
+    "description": "mixin interface",
+    "lastUpdated": "2015-05-06T09:48:50Z",
+    "url": "https://github.com/krambuhl/kombini",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "komposit",
+    "description": "For creating functional compositions",
+    "lastUpdated": "2015-06-02T07:12:22Z",
+    "url": "https://github.com/krambuhl/komposit",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "Kondico",
+    "description": "Functional conditions and compositions.",
+    "lastUpdated": "2015-01-30T02:34:29Z",
+    "url": "https://github.com/krambuhl/Kondico",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "listento-emitter",
+    "description": "ListenTo helper mixin for any object conforming to EventEmitter interface.",
+    "lastUpdated": "2015-05-07T05:53:24Z",
+    "url": "https://github.com/krambuhl/listento-emitter",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "lodgepool",
+    "description": "Super secret development in plain view.",
+    "lastUpdated": "2016-05-16T03:32:44Z",
+    "url": "https://github.com/krambuhl/lodgepool",
+    "language": "Elm",
+    "stars": 1
+  },
+  {
+    "name": "melvisualizer",
+    "description": "Visualize books without words.",
+    "lastUpdated": "2016-11-25T07:15:47Z",
+    "url": "https://github.com/krambuhl/melvisualizer",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "message-bank",
+    "description": "Subscribable message store.",
+    "lastUpdated": "2015-01-23T08:52:49Z",
+    "url": "https://github.com/krambuhl/message-bank",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "metalsmith-batch-dom",
+    "description": "Processes HTML pages and modifies dom elements using config or functional api.",
+    "lastUpdated": "2016-05-22T04:10:02Z",
+    "url": "https://github.com/krambuhl/metalsmith-batch-dom",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "metalsmith-external-links",
+    "description": "Automatically links headed to an external destination.",
+    "lastUpdated": "2015-09-28T18:23:10Z",
+    "url": "https://github.com/krambuhl/metalsmith-external-links",
+    "language": "JavaScript",
+    "stars": 1
+  },
+  {
+    "name": "metalsmith-hierarchy",
+    "description": "Metalsmith plugin that adds hierarchy information to file metadata.",
+    "lastUpdated": "2015-09-02T09:58:15Z",
+    "url": "https://github.com/krambuhl/metalsmith-hierarchy",
+    "language": "JavaScript",
+    "stars": 1
+  },
+  {
+    "name": "metalsmith-relativity",
+    "description": "Metalsmith plugin that adds relativity path metadata to files.",
+    "lastUpdated": "2015-08-03T06:53:05Z",
+    "url": "https://github.com/krambuhl/metalsmith-relativity",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "metalsmith-rewrite",
+    "description": "Renames a glob of files using string interpolation with file metadata or a function.",
+    "lastUpdated": "2016-07-31T00:24:38Z",
+    "url": "https://github.com/krambuhl/metalsmith-rewrite",
+    "language": "JavaScript",
+    "stars": 1
+  },
+  {
+    "name": "mutators",
+    "description": "mixin for get/set object behavior",
+    "lastUpdated": "2015-05-11T23:14:59Z",
+    "url": "https://github.com/krambuhl/mutators",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "Northplate",
+    "description": "Boilerplate code for Compass/Sass-based sites using SMACSS-style approach.",
+    "lastUpdated": "2015-07-27T12:51:51Z",
+    "url": "https://github.com/krambuhl/Northplate",
+    "language": "Ruby",
+    "stars": 15
+  },
+  {
+    "name": "npm-module-boilerplate",
+    "description": "Boilerplate for creating a npm/browserify module.",
+    "lastUpdated": "2015-01-14T20:41:23Z",
+    "url": "https://github.com/krambuhl/npm-module-boilerplate",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "object-contains",
+    "description": "Predicate function checking if haystack object contains needle object",
+    "lastUpdated": "2015-10-28T16:41:11Z",
+    "url": "https://github.com/krambuhl/object-contains",
+    "language": "JavaScript",
+    "stars": 3
+  },
+  {
+    "name": "Open-Remix",
+    "description": "Remix all the things!",
+    "lastUpdated": "2013-10-22T04:16:27Z",
+    "url": "https://github.com/krambuhl/Open-Remix",
+    "language": null,
+    "stars": 1
+  },
+  {
+    "name": "Patchbay",
+    "description": "Web components built on top of Struck.",
+    "lastUpdated": "2014-09-16T04:58:32Z",
+    "url": "https://github.com/krambuhl/Patchbay",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "postcss-pipeline-webpack-plugin",
+    "description": "A webpack plugin to process generated assets with PostCSS pipeline",
+    "lastUpdated": "2016-12-27T03:19:26Z",
+    "url": "https://github.com/krambuhl/postcss-pipeline-webpack-plugin",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "reflecto",
+    "description": "Reflect components every which way",
+    "lastUpdated": "2016-06-28T17:32:20Z",
+    "url": "https://github.com/krambuhl/reflecto",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "ripeto",
+    "description": null,
+    "lastUpdated": "2015-02-16T06:04:36Z",
+    "url": "https://github.com/krambuhl/ripeto",
+    "language": null,
+    "stars": 0
+  },
+  {
+    "name": "ripeto-binding-self",
+    "description": "Repeat object binding 'self' strategy for binding to current object context.",
+    "lastUpdated": "2015-02-18T06:32:45Z",
+    "url": "https://github.com/krambuhl/ripeto-binding-self",
+    "language": null,
+    "stars": 0
+  },
+  {
+    "name": "ripeto-bindings",
+    "description": "Repeat object binding strategies",
+    "lastUpdated": "2015-02-18T06:26:47Z",
+    "url": "https://github.com/krambuhl/ripeto-bindings",
+    "language": null,
+    "stars": 0
+  },
+  {
+    "name": "ripeto-coreobj",
+    "description": "Repeatable core object",
+    "lastUpdated": "2015-02-18T06:14:08Z",
+    "url": "https://github.com/krambuhl/ripeto-coreobj",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "ripeto-store",
+    "description": "Repeat data store",
+    "lastUpdated": "2015-02-19T07:03:14Z",
+    "url": "https://github.com/krambuhl/ripeto-store",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "ripeto-view",
+    "description": "Repeat view object",
+    "lastUpdated": "2015-02-19T07:04:44Z",
+    "url": "https://github.com/krambuhl/ripeto-view",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain",
+    "description": "HTML template tree parser and renderer.",
+    "lastUpdated": "2016-01-29T08:40:09Z",
+    "url": "https://github.com/krambuhl/rogain",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-component-children",
+    "description": "Rogain <Children /> helper component",
+    "lastUpdated": "2016-03-21T07:53:11Z",
+    "url": "https://github.com/krambuhl/rogain-component-children",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-component-defined",
+    "description": "Rogain <Defined /> helper component",
+    "lastUpdated": "2016-03-23T02:57:41Z",
+    "url": "https://github.com/krambuhl/rogain-component-defined",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-component-each",
+    "description": "Rogain <Each /> helper component",
+    "lastUpdated": "2016-03-23T04:20:24Z",
+    "url": "https://github.com/krambuhl/rogain-component-each",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-component-else",
+    "description": "Rogain <Else /> helper component",
+    "lastUpdated": "2016-03-23T04:20:34Z",
+    "url": "https://github.com/krambuhl/rogain-component-else",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-component-empty",
+    "description": "Rogain <Empty /> helper component",
+    "lastUpdated": "2016-03-23T04:16:19Z",
+    "url": "https://github.com/krambuhl/rogain-component-empty",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-component-frame",
+    "description": "Rogain <Frame /> helper component",
+    "lastUpdated": "2016-03-23T04:16:12Z",
+    "url": "https://github.com/krambuhl/rogain-component-frame",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-component-if",
+    "description": "Rogain <If /> helper component",
+    "lastUpdated": "2016-03-23T04:15:55Z",
+    "url": "https://github.com/krambuhl/rogain-component-if",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-component-range",
+    "description": "Rogain <Range /> helper component",
+    "lastUpdated": "2016-03-23T04:15:48Z",
+    "url": "https://github.com/krambuhl/rogain-component-range",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-component-slot",
+    "description": "Rogain <Slot /> helper component",
+    "lastUpdated": "2016-03-23T04:15:39Z",
+    "url": "https://github.com/krambuhl/rogain-component-slot",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-component-unless",
+    "description": "Rogain <Unless /> helper component",
+    "lastUpdated": "2016-03-23T04:15:15Z",
+    "url": "https://github.com/krambuhl/rogain-component-unless",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-config",
+    "description": null,
+    "lastUpdated": "2016-02-05T05:32:11Z",
+    "url": "https://github.com/krambuhl/rogain-config",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-core-components",
+    "description": "Core library of components Rogain templates.",
+    "lastUpdated": "2016-04-11T01:41:21Z",
+    "url": "https://github.com/krambuhl/rogain-core-components",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-core-helpers",
+    "description": "Rogain core template helpers",
+    "lastUpdated": "2016-02-08T05:43:37Z",
+    "url": "https://github.com/krambuhl/rogain-core-helpers",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-parser",
+    "description": "Parser that converts html templates into json trees",
+    "lastUpdated": "2016-02-05T09:39:39Z",
+    "url": "https://github.com/krambuhl/rogain-parser",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-registry",
+    "description": "Rogain module registry.",
+    "lastUpdated": "2016-03-03T02:15:45Z",
+    "url": "https://github.com/krambuhl/rogain-registry",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-render-string",
+    "description": "Render regain tree to string.",
+    "lastUpdated": "2016-02-07T10:05:45Z",
+    "url": "https://github.com/krambuhl/rogain-render-string",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-resolve-tree",
+    "description": "Resolves a rogain tree into a simple dom tree using a json object.",
+    "lastUpdated": "2016-02-23T06:26:51Z",
+    "url": "https://github.com/krambuhl/rogain-resolve-tree",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-tree-utils",
+    "description": "Utilities for manipulating and traversing Rogain trees.",
+    "lastUpdated": "2016-02-21T10:40:39Z",
+    "url": "https://github.com/krambuhl/rogain-tree-utils",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogain-utils",
+    "description": "Utilities for Rogain.",
+    "lastUpdated": "2016-03-01T01:45:15Z",
+    "url": "https://github.com/krambuhl/rogain-utils",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogainify",
+    "description": "Rogain browserify transform.",
+    "lastUpdated": "2016-02-09T11:05:49Z",
+    "url": "https://github.com/krambuhl/rogainify",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "rogulp",
+    "description": "Rogain gulp plugins.  ",
+    "lastUpdated": "2016-03-13T03:31:38Z",
+    "url": "https://github.com/krambuhl/rogulp",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "s-expression-primer",
+    "description": "A primer for Lisp-style S-expressions for those familiar with C-family languages.",
+    "lastUpdated": "2016-06-26T22:01:02Z",
+    "url": "https://github.com/krambuhl/s-expression-primer",
+    "language": null,
+    "stars": 0
+  },
+  {
+    "name": "scale-unit",
+    "description": "A simple tool for sensibly working with css measurements in javascript.",
+    "lastUpdated": "2016-05-22T02:43:00Z",
+    "url": "https://github.com/krambuhl/scale-unit",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "Separator.js",
+    "description": "A simple library for hooking data to an interface.",
+    "lastUpdated": "2013-06-07T07:01:47Z",
+    "url": "https://github.com/krambuhl/Separator.js",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "Stata",
+    "description": "State Machines for javascript",
+    "lastUpdated": "2014-12-01T04:37:32Z",
+    "url": "https://github.com/krambuhl/Stata",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "static-generator-webpack-plugin",
+    "description": "Minimal, unopinionated static site generator powered by webpack",
+    "lastUpdated": "2016-11-13T01:26:25Z",
+    "url": "https://github.com/krambuhl/static-generator-webpack-plugin",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "statum",
+    "description": "Simple state machines",
+    "lastUpdated": "2015-06-04T10:13:04Z",
+    "url": "https://github.com/krambuhl/statum",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "Stoplight",
+    "description": "Stoplight is a Javascript Form Validation class that takes advantage of HTML data attributes to provide live form validation.",
+    "lastUpdated": "2013-10-21T01:31:27Z",
+    "url": "https://github.com/krambuhl/Stoplight",
+    "language": "JavaScript",
+    "stars": 1
+  },
+  {
+    "name": "Struck",
+    "description": "Simple event-driven, extendable javascript objects.",
+    "lastUpdated": "2014-09-17T03:56:30Z",
+    "url": "https://github.com/krambuhl/Struck",
+    "language": "JavaScript",
+    "stars": 1
+  },
+  {
+    "name": "stumptown-bear",
+    "description": "Stumptown Bear Portfolio",
+    "lastUpdated": "2015-08-18T06:23:19Z",
+    "url": "https://github.com/krambuhl/stumptown-bear",
+    "language": "CSS",
+    "stars": 1
+  },
+  {
+    "name": "Stumptown-Bear-v7",
+    "description": "Stumptown Bear prototype number 7",
+    "lastUpdated": "2014-04-28T07:44:13Z",
+    "url": "https://github.com/krambuhl/Stumptown-Bear-v7",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "stumpy-eleven",
+    "description": "stumptown bear version eleven",
+    "lastUpdated": "2017-01-10T06:09:17Z",
+    "url": "https://github.com/krambuhl/stumpy-eleven",
+    "language": "Vue",
+    "stars": 0
+  },
+  {
+    "name": "Tenplate",
+    "description": "Boilerplate project for Backbone.Tendon based applications.",
+    "lastUpdated": "2014-03-13T20:25:33Z",
+    "url": "https://github.com/krambuhl/Tenplate",
+    "language": "JavaScript",
+    "stars": 2
+  },
+  {
+    "name": "Toolkit.js",
+    "description": null,
+    "lastUpdated": "2013-04-09T12:53:45Z",
+    "url": "https://github.com/krambuhl/Toolkit.js",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "top-gear-data",
+    "description": "lap time scraper and hopefully dataviz.",
+    "lastUpdated": "2014-08-01T06:28:58Z",
+    "url": "https://github.com/krambuhl/top-gear-data",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "touchscroll",
+    "description": "Adds a touchscroll event to the dom that fires scroll events more precisely on touch devices.",
+    "lastUpdated": "2014-05-19T12:13:45Z",
+    "url": "https://github.com/krambuhl/touchscroll",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "turbo",
+    "description": "A demo using git components",
+    "lastUpdated": "2016-08-09T09:08:44Z",
+    "url": "https://github.com/krambuhl/turbo",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "turbo-components",
+    "description": null,
+    "lastUpdated": "2016-07-19T07:31:14Z",
+    "url": "https://github.com/krambuhl/turbo-components",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "turbo-react",
+    "description": "It's a thing",
+    "lastUpdated": "2016-09-09T06:44:45Z",
+    "url": "https://github.com/krambuhl/turbo-react",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "turbo-styleguide",
+    "description": "Demo styleguide using turbo components.",
+    "lastUpdated": "2016-08-22T06:20:17Z",
+    "url": "https://github.com/krambuhl/turbo-styleguide",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "ui-coverage",
+    "description": "Website for testing that HTML components are styled.",
+    "lastUpdated": "2014-10-05T06:21:46Z",
+    "url": "https://github.com/krambuhl/ui-coverage",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "Uni",
+    "description": "Uni is a runner and composer of state machines",
+    "lastUpdated": "2014-11-24T18:15:29Z",
+    "url": "https://github.com/krambuhl/Uni",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "unicorn.js",
+    "description": "A judgmental pony that runs functions conditionally.  ",
+    "lastUpdated": "2014-10-20T06:45:05Z",
+    "url": "https://github.com/krambuhl/unicorn.js",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "web",
+    "description": "The easiest way to create web applications with Go",
+    "lastUpdated": "2013-03-01T05:32:01Z",
+    "url": "https://github.com/krambuhl/web",
+    "language": "Go",
+    "stars": 0
+  },
+  {
+    "name": "web-boilerplate",
+    "description": "Frontend boilerplate for building static websites.  Automates many common development tasks.",
+    "lastUpdated": "2015-11-11T20:44:15Z",
+    "url": "https://github.com/krambuhl/web-boilerplate",
+    "language": "JavaScript",
+    "stars": 3
+  },
+  {
+    "name": "webpack-adventure",
+    "description": "Let's go a packing",
+    "lastUpdated": "2016-06-06T06:38:47Z",
+    "url": "https://github.com/krambuhl/webpack-adventure",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "wiki-locations",
+    "description": "Crawler grabbing location data from wikipedia graph",
+    "lastUpdated": "2015-06-28T09:34:55Z",
+    "url": "https://github.com/krambuhl/wiki-locations",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "Zoetrope",
+    "description": "Javascript plugin for creating galleries that repeat endlessly. Supports snapping, touch, and paginated navigation.",
+    "lastUpdated": "2014-04-28T08:52:50Z",
+    "url": "https://github.com/krambuhl/Zoetrope",
+    "language": "JavaScript",
+    "stars": 0
+  }
+]

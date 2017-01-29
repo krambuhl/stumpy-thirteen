@@ -10,23 +10,27 @@
 
 <script>
   import PortfolioProject from 'Components/PortfolioProject';
-  import image from './assets/precision-machines.jpg';
+  import imageWebsite from './assets/pm-falling-sun-website.png';
+  import imageCover from './assets/pm-falling-sun-cover.jpg';
 
   export default {
     meta: {
       ...PortfolioProject.meta,
-      pageTitle: 'Precision Machines - Stumptown Bear'
+      pageTitle: 'Precision Machines\' Falling Sun - Stumptown Bear'
     },
     data() {
       return {
-        title: 'Precision Machines',
-        year: 2014,
-        company: 'Precision Machines',
-        companyHref: 'http://pmisdead.com/',
+        title: 'Precision Machines\' Falling Sun',
+        year: 2016,
+        company: 'Stumptown Bear',
+        companyHref: 'http://stumptownbear.com',
         projectHref: 'http://pmisdead.com/fallingsun/',
         projectImages: [{
+          alt: 'Falling Sun website',
+          asset: imageWebsite
+        }, {
           alt: 'Falling Sun album cover',
-          asset: image
+          asset: imageCover
         }]
       }
     },

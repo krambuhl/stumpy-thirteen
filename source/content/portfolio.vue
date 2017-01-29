@@ -2,7 +2,7 @@
   <div class="portfolio">
     <page-heading>
       <heading tagName="h1" class="portfolio_title">Portfolio</heading>
-      <p>A sampling of my contributions as a web developer and desginer</p>
+      <p>A sampling of my contributions as a web developer and designer</p>
     </page-heading>
 
     <div class="portfolio_list">
@@ -15,7 +15,6 @@
 
           <image-set
             class="portfolio_project-image"
-            width="320"
             :alt="project.projectImages[0].alt"
             :asset="project.projectImages[0].asset" />
           </div>
@@ -143,8 +142,8 @@
           Object.assign({ href: 'webtrends-prototypes' }, webtrendsPrototypes.data()),
           Object.assign({ href: 'design-prototypes' }, designPrototypes.data()),
           Object.assign({ href: 'il7' }, il7.data()),
-          Object.assign({ href: 'iounoi' }, iounoi.data()),
           Object.assign({ href: 'precision-machines' }, precisionMachines.data()),
+          Object.assign({ href: 'iounoi' }, iounoi.data()),
         ]
       }
     },

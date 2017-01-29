@@ -8,6 +8,7 @@ const baseConfig = require('./webpack.config.base');
 
 module.exports = webpackMerge(baseConfig, {
   devServer: {
+    host: '0.0.0.0',
     inline: true,
     historyApiFallback: true,
     stats: {

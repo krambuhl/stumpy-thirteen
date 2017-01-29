@@ -1,0 +1,282 @@
+[
+  {
+    "name": "appleseed",
+    "version": "0.1.3",
+    "description": "A lightweight implementation of the Elm data model using javascript",
+    "lastUpdated": "2016-09-27T19:41:11.086Z",
+    "url": "https://www.npmjs.com/package/appleseed"
+  },
+  {
+    "name": "custom-event-polyfill",
+    "version": "0.3.0",
+    "description": "Polyfill for creating CustomEvents on IE9/10/11 if native implementation is missing.",
+    "lastUpdated": "2016-08-31T03:55:05.315Z",
+    "url": "https://www.npmjs.com/package/custom-event-polyfill"
+  },
+  {
+    "name": "date-grab",
+    "version": "0.1.1",
+    "description": "Functional wrapper for getting date properties",
+    "lastUpdated": "2015-06-04T05:41:35.517Z",
+    "url": "https://www.npmjs.com/package/date-grab"
+  },
+  {
+    "name": "dopl",
+    "version": "0.2.0",
+    "description": "Use dopl to make a new directory based on a template directory.  Processes each file through mustache and provides filename template strings.",
+    "lastUpdated": "2016-12-09T00:44:28.778Z",
+    "url": "https://www.npmjs.com/package/dopl"
+  },
+  {
+    "name": "formi",
+    "version": "0.4.0",
+    "description": "Functional Programming API",
+    "lastUpdated": "2015-01-01T22:02:10.220Z",
+    "url": "https://www.npmjs.com/package/formi"
+  },
+  {
+    "name": "functional-predicates",
+    "version": "0.1.0",
+    "description": "Library for creating common predicates.",
+    "lastUpdated": "2015-06-02T12:48:08.488Z",
+    "url": "https://www.npmjs.com/package/functional-predicates"
+  },
+  {
+    "name": "gates",
+    "version": "0.1.2",
+    "description": "Functional logic gates / combinators",
+    "lastUpdated": "2015-06-02T08:34:29.745Z",
+    "url": "https://www.npmjs.com/package/gates"
+  },
+  {
+    "name": "hookie",
+    "version": "0.1.1",
+    "description": "Simple function lifecycle hooks",
+    "lastUpdated": "2015-05-07T06:04:48.462Z",
+    "url": "https://www.npmjs.com/package/hookie"
+  },
+  {
+    "name": "kombini",
+    "version": "0.1.0",
+    "description": "interface for creating mixins",
+    "lastUpdated": "2015-05-06T09:50:41.829Z",
+    "url": "https://www.npmjs.com/package/kombini"
+  },
+  {
+    "name": "komposit",
+    "version": "0.1.1",
+    "description": "For creating functional compositions",
+    "lastUpdated": "2015-06-02T08:31:30.671Z",
+    "url": "https://www.npmjs.com/package/komposit"
+  },
+  {
+    "name": "kondico",
+    "version": "0.2.1",
+    "description": "Functional conditions and compositions.",
+    "lastUpdated": "2015-01-30T02:37:27.063Z",
+    "url": "https://www.npmjs.com/package/kondico"
+  },
+  {
+    "name": "listento-emitter",
+    "version": "0.1.2",
+    "description": "Mixin for event-emitter inversion of control listen functions",
+    "lastUpdated": "2015-05-12T12:15:54.962Z",
+    "url": "https://www.npmjs.com/package/listento-emitter"
+  },
+  {
+    "name": "message-bank",
+    "version": "1.0.5",
+    "description": "Subscribable message bank",
+    "lastUpdated": "2015-01-23T08:55:52.576Z",
+    "url": "https://www.npmjs.com/package/message-bank"
+  },
+  {
+    "name": "metalsmith-batch-dom",
+    "version": "0.1.3",
+    "description": "Processes HTML pages and modifies dom elements.",
+    "lastUpdated": "2016-05-22T04:12:39.123Z",
+    "url": "https://www.npmjs.com/package/metalsmith-batch-dom"
+  },
+  {
+    "name": "metalsmith-external-links",
+    "version": "0.1.2",
+    "description": "Processes HTML pages, marking external links.",
+    "lastUpdated": "2015-08-05T06:38:43.642Z",
+    "url": "https://www.npmjs.com/package/metalsmith-external-links"
+  },
+  {
+    "name": "metalsmith-hierarchy",
+    "version": "0.1.0",
+    "description": "Metalsmith plugin that adds hierarchy information to file metadata.",
+    "lastUpdated": "2015-08-05T06:31:43.593Z",
+    "url": "https://www.npmjs.com/package/metalsmith-hierarchy"
+  },
+  {
+    "name": "metalsmith-relativity",
+    "version": "0.1.1",
+    "description": "Metalsmith plugin that adds relativity path metadata to files",
+    "lastUpdated": "2015-08-05T06:30:54.857Z",
+    "url": "https://www.npmjs.com/package/metalsmith-relativity"
+  },
+  {
+    "name": "metalsmith-rewrite",
+    "version": "0.1.2",
+    "description": "Renames a glob of files using string patterns and file metadata.",
+    "lastUpdated": "2015-08-05T06:38:07.771Z",
+    "url": "https://www.npmjs.com/package/metalsmith-rewrite"
+  },
+  {
+    "name": "mutators",
+    "version": "0.2.0",
+    "description": "Mixin for get/set object behavior",
+    "lastUpdated": "2015-05-12T11:15:44.097Z",
+    "url": "https://www.npmjs.com/package/mutators"
+  },
+  {
+    "name": "npm-module-boilerplate",
+    "version": "1.0.3",
+    "description": "Boilerplate for creating a npm/browserify module.",
+    "lastUpdated": "2015-01-14T20:44:30.935Z",
+    "url": "https://www.npmjs.com/package/npm-module-boilerplate"
+  },
+  {
+    "name": "object-contains",
+    "version": "0.1.0",
+    "description": "Predicate function checking if haystack object contains needle object",
+    "lastUpdated": "2015-05-12T12:05:55.844Z",
+    "url": "https://www.npmjs.com/package/object-contains"
+  },
+  {
+    "name": "rogain",
+    "version": "0.1.0",
+    "description": "HTML template tree parser and renderer",
+    "lastUpdated": "2016-02-08T07:57:00.665Z",
+    "url": "https://www.npmjs.com/package/rogain"
+  },
+  {
+    "name": "rogain-component-each",
+    "version": "1.1.0",
+    "description": "Rogain <Each /> helper component",
+    "lastUpdated": "2016-06-24T03:12:37.707Z",
+    "url": "https://www.npmjs.com/package/rogain-component-each"
+  },
+  {
+    "name": "rogain-component-frame",
+    "version": "1.0.0",
+    "description": "Rogain <Frame /> helper component",
+    "lastUpdated": "2016-04-11T01:51:28.585Z",
+    "url": "https://www.npmjs.com/package/rogain-component-frame"
+  },
+  {
+    "name": "rogain-component-if",
+    "version": "1.1.0",
+    "description": "Rogain <If /> helper component",
+    "lastUpdated": "2016-06-24T04:01:40.567Z",
+    "url": "https://www.npmjs.com/package/rogain-component-if"
+  },
+  {
+    "name": "rogain-config",
+    "version": "0.3.0",
+    "description": "Rogain configuration utility",
+    "lastUpdated": "2016-03-21T03:08:27.831Z",
+    "url": "https://www.npmjs.com/package/rogain-config"
+  },
+  {
+    "name": "rogain-core-components",
+    "version": "1.1.0",
+    "description": "Core components for Rogain templates.",
+    "lastUpdated": "2016-06-24T04:13:46.443Z",
+    "url": "https://www.npmjs.com/package/rogain-core-components"
+  },
+  {
+    "name": "rogain-core-helpers",
+    "version": "0.2.3",
+    "description": "Core helpers for Rogain templates.",
+    "lastUpdated": "2016-03-15T07:05:45.007Z",
+    "url": "https://www.npmjs.com/package/rogain-core-helpers"
+  },
+  {
+    "name": "rogain-parser",
+    "version": "0.6.0",
+    "description": "Rogain parser that converts html templates into rogain trees",
+    "lastUpdated": "2016-06-23T05:57:14.823Z",
+    "url": "https://www.npmjs.com/package/rogain-parser"
+  },
+  {
+    "name": "rogain-registry",
+    "version": "0.1.0",
+    "description": "Rogain module registry",
+    "lastUpdated": "2016-03-03T02:15:51.962Z",
+    "url": "https://www.npmjs.com/package/rogain-registry"
+  },
+  {
+    "name": "rogain-render-string",
+    "version": "0.3.0",
+    "description": "Render Rogain trees into html using string concatination.",
+    "lastUpdated": "2016-04-11T06:25:20.087Z",
+    "url": "https://www.npmjs.com/package/rogain-render-string"
+  },
+  {
+    "name": "rogain-resolve-tree",
+    "version": "0.4.0",
+    "description": "Resolve rogain tree with given data into simple dom tree.",
+    "lastUpdated": "2016-04-11T05:53:19.095Z",
+    "url": "https://www.npmjs.com/package/rogain-resolve-tree"
+  },
+  {
+    "name": "rogain-tree-utils",
+    "version": "0.2.1",
+    "description": "Rogain tree utilities",
+    "lastUpdated": "2016-02-21T10:20:24.711Z",
+    "url": "https://www.npmjs.com/package/rogain-tree-utils"
+  },
+  {
+    "name": "rogain-utils",
+    "version": "0.2.3",
+    "description": "Rogain utilities",
+    "lastUpdated": "2016-03-15T06:49:53.339Z",
+    "url": "https://www.npmjs.com/package/rogain-utils"
+  },
+  {
+    "name": "rogainify",
+    "version": "0.2.1",
+    "description": "Rogain template browserify transform.",
+    "lastUpdated": "2016-04-24T00:53:04.922Z",
+    "url": "https://www.npmjs.com/package/rogainify"
+  },
+  {
+    "name": "rogulp",
+    "version": "0.1.3",
+    "description": "Rogain gulp helpers",
+    "lastUpdated": "2016-03-25T07:12:13.910Z",
+    "url": "https://www.npmjs.com/package/rogulp"
+  },
+  {
+    "name": "scale-unit",
+    "version": "1.1.0",
+    "description": "A module for scaling measurements in javascript.",
+    "lastUpdated": "2016-05-31T06:13:42.095Z",
+    "url": "https://www.npmjs.com/package/scale-unit"
+  },
+  {
+    "name": "static-generator-webpack-plugin",
+    "version": "3.1.2",
+    "description": "Minimal, unopinionated static site generator powered by webpack",
+    "lastUpdated": "2016-11-19T03:37:09.253Z",
+    "url": "https://www.npmjs.com/package/static-generator-webpack-plugin"
+  },
+  {
+    "name": "statum",
+    "version": "0.1.2",
+    "description": "Simple state machines",
+    "lastUpdated": "2015-06-15T04:54:38.065Z",
+    "url": "https://www.npmjs.com/package/statum"
+  },
+  {
+    "name": "struck",
+    "version": "0.5.9",
+    "description": "Simple event-driven, extendable objects",
+    "lastUpdated": "2014-09-20T23:24:27.281Z",
+    "url": "https://www.npmjs.com/package/struck"
+  }
+]

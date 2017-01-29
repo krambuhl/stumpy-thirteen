@@ -2,7 +2,6 @@ const webpack = require('webpack');
 const path = require('path');
 
 const SvgStorePlugin = require('webpack-svgstore-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -23,6 +22,8 @@ module.exports = {
       Content: path.resolve(__dirname, '..', 'source/content'),
       Components: path.resolve(__dirname, '..', 'source/components'),
       Tags: path.resolve(__dirname, '..', 'source/tags'),
+      'data/npm': path.resolve(__dirname, 'data/npm-data.json'),
+      'data/github': path.resolve(__dirname, 'data/github-data.json'),
     },
   },
   module: {
@@ -52,30 +53,11 @@ module.exports = {
     ]
   },
   plugins: [
-    new SvgStorePlugin(),
-    new FaviconsWebpackPlugin({
-      logo: path.resolve(__dirname, 'assets/favicon.png'),
-      prefix: '/assets/favicons/',
-      persistentCache: true,
-      icons: {
-        android: false,
-        appleIcon: false,
-        appleStartup: false,
-        coast: false,
-        favicons: true,
-        firefox: false,
-        opengraph: true,
-        twitter: true,
-        yandex: false,
-        windows: false
-      }
-    })
+    new SvgStorePlugin()
   ],
-  responsiveLoader: {
-    placeholder: true
-  },
   postcss: () => [
     require('postcss-cssnext')({
+      warnForDuplicates: false,
       features: {
         customProperties: {
           variables: Object.assign(

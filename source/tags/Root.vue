@@ -4,7 +4,7 @@
 
 <style>
   html {
-    font-family: 'museo-sans-rounded';
+    font-family: 'museo-sans-rounded', 'Arial Rounded MT Bold', Helvetica;
     font-weight: 500;
     font-size: 100%;
 

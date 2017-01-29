@@ -4,8 +4,10 @@ const fs = require('fs');
 
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
+
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const baseConfig = require('./webpack.config.base');
 
@@ -34,6 +36,23 @@ module.exports = webpackMerge(baseConfig, {
     ]
   },
   plugins: [
+    new FaviconsWebpackPlugin({
+      logo: path.resolve(__dirname, 'assets/favicon.png'),
+      prefix: '/assets/favicons/',
+      persistentCache: true,
+      icons: {
+        android: false,
+        appleIcon: false,
+        appleStartup: false,
+        coast: false,
+        favicons: true,
+        firefox: false,
+        opengraph: true,
+        twitter: true,
+        yandex: false,
+        windows: false
+      }
+    }),
     new StaticSiteGeneratorPlugin('static', paths, { layout, renderer }),
     new ExtractTextPlugin('/assets/[name].css')
   ],
@@ -41,5 +60,8 @@ module.exports = webpackMerge(baseConfig, {
     loaders: {
       css: ExtractTextPlugin.extract('css!postcss')
     }
+  },
+  responsiveLoader: {
+    placeholder: true
   }
 });

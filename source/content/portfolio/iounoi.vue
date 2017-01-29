@@ -21,8 +21,8 @@
       return {
         title: 'IOUNOI',
         year: 2014,
-        company: 'IOUNOI',
-        companyHref: 'http://iounoi.com',
+        company: 'Stumptown Bear',
+        companyHref: 'http://stumptownbear.com',
         projectHref: 'http://iounoi.com',
         projectImages: [{
           alt: 'IOUNOI Logo',
