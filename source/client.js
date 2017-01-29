@@ -11,18 +11,26 @@ require('webpack-svgstore-plugin/src/helpers/svgxhr')(__svg__);
 
 Vue.use(VueRouter)
 
-router.afterEach((to, routeFrom, done) => {
-  const toMeta = to.matched[0].components.default.meta;
+router.afterEach((to, routeFrom) => {
+  const toMeta = to.meta;
 
-  if (toMeta.pageTitle) document.title = toMeta.pageTitle;
+  if (toMeta.pageTitle) {
+    document.title = toMeta.pageTitle;
 
-  if (routeFrom && routeFrom.matched[0]) {
-    const fromMeta = routeFrom.matched[0].components.default.meta;
+    ga('set', {
+      page: to.path,
+      title: toMeta.pageTitle
+    });
+    ga('send', 'pageview');
+  }
+
+  if (routeFrom) {
+    const fromMeta = routeFrom.meta;
     if (fromMeta.bodyClass) fromMeta.bodyClass.split(' ').forEach(cls => document.body.classList.remove(cls))
   }
 
   if (toMeta.bodyClass) toMeta.bodyClass.split(' ').forEach(cls => document.body.classList.add(cls))
-})
+});
 
 new Vue({
   el: '#app',

@@ -23,7 +23,7 @@
   import Icon from './Icon';
   export default {
     props: {
-      asset: { type: Object, require: true },
+      asset: { require: true },
       alt: { type: String },
       width: { type: String },
       height: { type: String },

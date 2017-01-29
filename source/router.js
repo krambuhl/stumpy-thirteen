@@ -9,19 +9,20 @@ const projectRoutes =
     const nameKey = key.substr(0, key.length - 4).substr(2);
     return {
       path: '/portfolio/' + nameKey,
-      component: projects(key)
+      component: projects(key),
+      meta: projects(key).meta
     }
   })
 
 export default new Router({
   mode: 'history',
   routes: [
-    { path: '/', name: 'home', component: require('Content/index') },
-    { path: '/open-source', alias: '/open-source/index', component: require('Content/open-source') },
-    { path: '/say-hello', alias: '/say-hello/index', component: require('Content/say-hello') },
-    { path: '/portfolio', alias: '/portfolio/index', component: require('Content/portfolio') },
+    { path: '/', name: 'home', component: require('Content/index'), meta: require('Content/index').meta },
+    { path: '/open-source', alias: '/open-source/index', component: require('Content/open-source'), meta: require('Content/open-source').meta },
+    { path: '/say-hello', alias: '/say-hello/index', component: require('Content/say-hello'), meta: require('Content/say-hello').meta },
+    { path: '/portfolio', alias: '/portfolio/index', component: require('Content/portfolio'), meta: require('Content/portfolio').meta },
     ...projectRoutes,
-    { path: '*', component: require('Content/404') }
+    { path: '*', component: require('Content/404'), meta: require('Content/404').meta }
   ],
   linkActiveClass: 'is-active-route',
   scrollBehavior(to, from, savedPosition) {
