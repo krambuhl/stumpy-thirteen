@@ -1,6 +1,10 @@
 {
   "name": "stumpy-eleven",
   "version": "11.0.0",
+  "engines": {
+    "node": ">=7.4",
+    "npm": ">=4.0"
+  },
   "description": "Stumptown Bear version eleven",
   "scripts": {
     "data": "node ./build/data/gatherData.js",
