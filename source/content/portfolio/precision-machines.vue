@@ -26,11 +26,11 @@
         companyHref: 'http://stumptownbear.com',
         projectHref: 'http://pmisdead.com/fallingsun/',
         projectImages: [{
-          alt: 'Falling Sun website',
-          asset: imageWebsite
-        }, {
           alt: 'Falling Sun album cover',
           asset: imageCover
+        }, {
+          alt: 'Falling Sun website',
+          asset: imageWebsite
         }]
       }
     },
