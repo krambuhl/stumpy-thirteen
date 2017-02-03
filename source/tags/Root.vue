@@ -3,6 +3,11 @@
 </template>
 
 <style>
+  * {
+    transition: none 0.3s ease;
+    box-sizing: border-box;
+  }
+
   html {
     font-family: 'museo-sans-rounded', 'Arial Rounded MT Bold', Helvetica;
     font-weight: 500;
@@ -15,8 +20,6 @@
   body {
     min-height: 100vh;
     line-height: 1.6em;
-
-    transition: 0.3s ease background-color;
   }
 
   p {

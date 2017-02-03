@@ -9,7 +9,18 @@
 
 <style>
   .mast-head {
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    background-color: var(--color-light);
+    z-index: 10;
+
+    & + *::before {
+      content: '';
+      display: block;
+      margin-top: 2.5em;
+    }
   }
 
   .mast-head_container {
@@ -19,6 +30,7 @@
   }
 
   .mast-head_brand {
+    display: block;
     padding: var(--size-padding-half);
     text-decoration: none;
     color: black;
@@ -33,12 +45,16 @@
   }
 
   .body--dark {
-    & .mast-head svg { fill: var(--color-light); }
+    & .mast-head {
+      background-color: var(--color-dark);
+      & svg { fill: var(--color-light); }
+    }
     & .brand { color: var(--color-light); }
   }
 
   .say-hello__body {
     & .mast-head {
+      background-color: var(--color-red);
       & a { color: var(--color-light); }
     }
   }

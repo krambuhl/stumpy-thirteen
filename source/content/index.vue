@@ -1,5 +1,5 @@
 <template>
-  <wrapper class="homepage">
+  <wrapper class="homepage" variant="wide">
     <rhythm variant="large">
       <heading tagName="h1">Why, hello there!</heading>
 

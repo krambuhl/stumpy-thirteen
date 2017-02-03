@@ -1,5 +1,5 @@
 <template>
-  <wrapper class="open-source">
+  <wrapper class="open-source" variant="wide">
     <rhythm>
       <page-heading class="open-source_page-heading">
         <heading>Open source code</heading>

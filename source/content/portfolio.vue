@@ -1,13 +1,13 @@
 <template>
-  <wrapper class="portfolio">
+  <wrapper class="portfolio" variant="wide">
     <page-heading>
       <heading tagName="h1" class="portfolio_title">Portfolio</heading>
       <p>A sampling of my contributions as a web developer and designer</p>
     </page-heading>
 
     <div class="portfolio_list">
-      <article v-for="project in projects" class="portfolio_project">
-        <router-link class="portfolio_project-link" :to="'/portfolio/' + project.href">
+      <article v-for="project in projects">
+        <router-link class="portfolio_project portfolio_project-link" :to="'/portfolio/' + project.href">
           <div class="portfolio_project-header">
             <heading tagName="h2">{{project.title}}</heading>
             <p>{{project.year}} / {{project.company}}</p>
@@ -49,7 +49,10 @@
 
     transition: background-color 0.3s ease;
 
-    &:hover {
+    &:active,
+    &:hover,
+    &:focus {
+      outline: none;
       background-color: color(var(--color-dark) alpha(20%));
 
       & .portfolio_project-header {

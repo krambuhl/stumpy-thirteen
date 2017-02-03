@@ -1,5 +1,5 @@
 <template>
-  <wrapper class="portfolio-project">
+  <wrapper class="portfolio-project" variant="wide">
     <page-heading>
       <heading class="portfolio-project_title">{{title}}</heading>
       <p>{{year}} with <a :href="companyHref" class="portfolio-project_company" target="_blank">{{company}}</a></p>

@@ -1,5 +1,5 @@
 <template>
-  <wrapper class="error-404">
+  <wrapper class="error-404" variant="wide">
     <page-heading>
       <heading>404</heading>
       <p>The li<span class="error-404_pun">bear</span>ian couldn't find the page you're looking for. He's too busy scratching his back.</p>

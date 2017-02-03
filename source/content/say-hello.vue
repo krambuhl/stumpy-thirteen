@@ -1,5 +1,5 @@
 <template>
-  <wrapper class="say-hello">
+  <wrapper class="say-hello" variant="wide">
     <rhythm variant="huge">
       <rhythm variant="small" class="say-hello_heading">
         <heading tagName="h1">So you want to say hello?</heading>

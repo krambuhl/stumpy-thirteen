@@ -28,9 +28,8 @@
     @media (--medium) { padding-top: 5em; }
   }
 
-  .fade-enter-active,
-  .fade-leave-active {
-    transition: transform 0.5s ease;
+  .fade-enter-active {
+    transition: transform 0.4s ease;
   }
 
   .fade-leave-active {
@@ -40,7 +39,7 @@
   .fade-enter,
   .fade-leave-to {
     opacity: 0;
-    transform: translate3d(0, 5vh, 0);
+    transform: translate3d(0, 1em, 0);
   }
 
 </style>
