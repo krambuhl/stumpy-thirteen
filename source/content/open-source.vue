@@ -1,52 +1,54 @@
 <template>
-  <rhythm class="open-source">
-    <page-heading class="open-source_page-heading">
-      <heading>Open source code</heading>
-      <p>I maintain and contribute to a number of open source projects.</p>
-    </page-heading>
+  <wrapper class="open-source">
+    <rhythm>
+      <page-heading class="open-source_page-heading">
+        <heading>Open source code</heading>
+        <p>I maintain and contribute to a number of open source projects.</p>
+      </page-heading>
 
-    <wrapper class="open-source_section open-source_section--npm" variant="no-padding">
-      <rhythm>
-        <heading tagName="h2" class="open-source_sub-title">
-          <span>{{npmData.length}}</span>
-          NPM modules
-        </heading>
+      <wrapper class="open-source_section open-source_section--npm" variant="no-padding">
+        <rhythm>
+          <heading tagName="h2" class="open-source_sub-title">
+            <span>{{npmData.length}}</span>
+            NPM modules
+          </heading>
 
-        <rhythm variant="tiny">
-          <div v-for="module in npmData" class="open-source_project">
-            <a :href="module.url" target="_blank">{{module.name}}</a>
-            <span class="open-source_dash">&ndash;</span>
-            <strong class="open-source_version">{{module.version}}</strong>
-            <span class="open-source_dash">&ndash;</span>
-            {{module.description}}
-          </div>
-        </rhythm>
-      </rhythm>
-    </wrapper>
-
-    <wrapper class="open-source_section open-source_section--github" variant="no-padding">
-      <rhythm>
-        <heading tagName="h3" class="open-source_sub-title">
-          <span>{{githubData.length}}</span>
-          Github repositories
-        </heading>
-
-        <rhythm variant="tiny">
-          <div v-for="module in githubData" class="open-source_project">
-            <a :href="module.url" target="_blank">{{module.fullname.replace('krambuhl/', '')}}</a>
-            <span v-if="module.language" class="open-source_language">
+          <rhythm variant="tiny">
+            <div v-for="module in npmData" class="open-source_project">
+              <a :href="module.url" target="_blank">{{module.name}}</a>
               <span class="open-source_dash">&ndash;</span>
-              {{module.language}}
-            </span>
-            <span v-if="module.description">
+              <strong class="open-source_version">{{module.version}}</strong>
               <span class="open-source_dash">&ndash;</span>
               {{module.description}}
-            </span>
-          </div>
+            </div>
+          </rhythm>
         </rhythm>
-      </rhythm>
-    </wrapper>
-  </rhythm>
+      </wrapper>
+
+      <wrapper class="open-source_section open-source_section--github" variant="no-padding">
+        <rhythm>
+          <heading tagName="h3" class="open-source_sub-title">
+            <span>{{githubData.length}}</span>
+            Github repositories
+          </heading>
+
+          <rhythm variant="tiny">
+            <div v-for="module in githubData" class="open-source_project">
+              <a :href="module.url" target="_blank">{{module.fullname.replace('krambuhl/', '')}}</a>
+              <span v-if="module.language" class="open-source_language">
+                <span class="open-source_dash">&ndash;</span>
+                {{module.language}}
+              </span>
+              <span v-if="module.description">
+                <span class="open-source_dash">&ndash;</span>
+                {{module.description}}
+              </span>
+            </div>
+          </rhythm>
+        </rhythm>
+      </wrapper>
+    </rhythm>
+  </wrapper>
 </template>
 
 <style>
@@ -111,13 +113,6 @@
   .open-source_version,
   .open-source_language {
     color: color(var(--color-dark) lightness(50%));
-  }
-
-  .open-source_body {
-    & .page-wrapper_content {
-      padding-left: 0;
-      padding-right: 0;
-    }
   }
 
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio-project">
+  <wrapper class="portfolio-project">
     <page-heading>
       <heading class="portfolio-project_title">{{title}}</heading>
       <p>{{year}} with <a :href="companyHref" class="portfolio-project_company" target="_blank">{{company}}</a></p>
@@ -13,7 +13,7 @@
         <image-set :alt="image.alt" :asset="image.asset" />
       </div>
     </div>
-  </div>
+  </wrapper>
 </template>
 
 <style>
@@ -71,6 +71,7 @@
   import ImageSet from 'Tags/ImageSet';
   import Heading from 'Tags/Heading';
   import BtnLink from 'Tags/BtnLink';
+  import Wrapper from 'Tags/Wrapper';
 
   export default {
     meta: {
@@ -80,7 +81,8 @@
       PageHeading,
       ImageSet,
       Heading,
-      BtnLink
+      BtnLink,
+      Wrapper
     },
     props: {
       title: String, //function() { return this.data.title },

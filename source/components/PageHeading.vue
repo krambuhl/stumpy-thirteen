@@ -12,9 +12,13 @@
     padding-bottom: 2em;
 
     & p {
-      width: 70%;
+      width: 80%;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    @media (--tiny) {
+      & p { width: 70%; }
     }
 
     @media (--small) {

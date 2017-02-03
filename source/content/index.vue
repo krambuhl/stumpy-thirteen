@@ -1,48 +1,50 @@
-  <template>
-  <rhythm class="homepage" variant="large">
-    <heading tagName="h1">Why, hello there!</heading>
+<template>
+  <wrapper class="homepage">
+    <rhythm variant="large">
+      <heading tagName="h1">Why, hello there!</heading>
 
-    <p>
-      I am Evan Krambuhl. <br />
-      I make things on the internet.
-    </p>
+      <p>
+        I am Evan Krambuhl. <br />
+        I make things on the internet.
+      </p>
 
-    <p>
-      We should make something together, just
-      <router-link to="/say-hello">say hello</router-link>.
-    </p>
+      <p>
+        We should make something together, just
+        <router-link to="/say-hello">say hello</router-link>.
+      </p>
 
-    <wrapper class="homepage_image" variant="narrow">
-      <image-set :asset="myFaceImage" alt="this is my face" />
-    </wrapper>
+      <wrapper class="homepage_image" variant="narrow no-padding">
+        <image-set :asset="myFaceImage" alt="this is my face" />
+      </wrapper>
 
-    <heading tagName="h2">I like</heading>
+      <heading tagName="h2">I like</heading>
 
-    <ul class="rhythm--small">
-      <li>Minimalism</li>
-      <li>Unix philosophy</li>
-      <li>Javascript and Node</li>
-      <li>Functional Programming</li>
-      <li>Open Source Coding</li>
-      <li>User Interface Design</li>
-      <li>Information Architecture</li>
-      <li>Data Visualization</li>
-      <li>Mathmatics</li>
-      <li>Music</li>
-      <li>Drumming</li>
-      <li>Frank Zappa</li>
-      <li>Audio Engineering</li>
-      <li>Tent Camping</li>
-      <li>Gardening</li>
-      <li>Board Games</li>
-      <li>Franz Kafka</li>
-      <li>Kurt Vonnegut</li>
-      <li>Sharing Knowledge</li>
-      <li>Wizdom</li>
-      <li>Fruits</li>
-      <li>Vegetables</li>
-    </ul>
-  </rhythm>
+      <ul class="rhythm--small">
+        <li>Minimalism</li>
+        <li>Unix philosophy</li>
+        <li>Javascript and Node</li>
+        <li>Functional Programming</li>
+        <li>Open Source Coding</li>
+        <li>User Interface Design</li>
+        <li>Information Architecture</li>
+        <li>Data Visualization</li>
+        <li>Mathmatics</li>
+        <li>Music</li>
+        <li>Drumming</li>
+        <li>Frank Zappa</li>
+        <li>Audio Engineering</li>
+        <li>Tent Camping</li>
+        <li>Gardening</li>
+        <li>Board Games</li>
+        <li>Franz Kafka</li>
+        <li>Kurt Vonnegut</li>
+        <li>Sharing Knowledge</li>
+        <li>Wizdom</li>
+        <li>Fruits</li>
+        <li>Vegetables</li>
+      </ul>
+    </rhythm>
+  </wrapper>
 </template>
 
 <style>

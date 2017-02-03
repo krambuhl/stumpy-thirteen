@@ -1,9 +1,15 @@
 <template>
   <div id="app" class="page-wrapper">
     <mast-head class="page-wrapper_mast"></mast-head>
-    <wrapper id="content" class="page-wrapper_content">
-      <slot></slot>
-    </wrapper>
+    <div id="content" class="page-wrapper_content">
+      <transition
+        name="fade"
+        @before-appear="beforeAppearHook"
+        @appear="appearHook"
+        @after-appear="afterAppearHook">
+        <slot></slot>
+      </transition>
+    </div>
   </div>
 </template>
 
@@ -21,6 +27,22 @@
     @media (--small) { padding-top: 4em; }
     @media (--medium) { padding-top: 5em; }
   }
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: transform 0.5s ease;
+  }
+
+  .fade-leave-active {
+    display: none;
+  }
+
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
+    transform: translate3d(0, 5vh, 0);
+  }
+
 </style>
 
 <script>
@@ -34,6 +56,11 @@
     components: {
       Wrapper,
       MastHead
+    },
+    methods: {
+      beforeAppearHook() { },
+      appearHook() { },
+      afterAppearHook() { }
     }
   }
 </script>

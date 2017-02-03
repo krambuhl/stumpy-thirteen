@@ -1,8 +1,10 @@
 <template>
-  <page-heading class="error-404">
-    <heading>404</heading>
-    <p>The li<span class="error-404_pun">bear</span>ian couldn't find the page you're looking for. He's too busy scratching his back.</p>
-  </page-heading>
+  <wrapper class="error-404">
+    <page-heading>
+      <heading>404</heading>
+      <p>The li<span class="error-404_pun">bear</span>ian couldn't find the page you're looking for. He's too busy scratching his back.</p>
+    </page-heading>
+  </wrapper>
 </template>
 
 <style>
@@ -29,6 +31,7 @@
 <script>
   import PageHeading from 'Components/PageHeading';
   import Heading from 'Tags/Heading';
+  import Wrapper from 'Tags/Wrapper';
 
   export default {
     meta: {
@@ -37,7 +40,8 @@
     },
     components: {
       PageHeading,
-      Heading
+      Heading,
+      Wrapper
     }
   }
 </script>

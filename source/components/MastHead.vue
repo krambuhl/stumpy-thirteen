@@ -1,6 +1,6 @@
 <template>
   <header class="mast-head">
-    <wrapper class="mast-head_container" variant="normal no-padding">
+    <wrapper class="mast-head_container" variant="wide no-padding">
       <router-link class="mast-head_brand" to="/"><brand /></router-link>
       <navigation class="mast-head_navigation" />
     </wrapper>

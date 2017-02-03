@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio">
+  <wrapper class="portfolio">
     <page-heading>
       <heading tagName="h1" class="portfolio_title">Portfolio</heading>
       <p>A sampling of my contributions as a web developer and designer</p>
@@ -21,7 +21,7 @@
         </router-link>
       </article>
     </div>
-  </div>
+  </wrapper>
 </template>
 
 <style>
@@ -108,6 +108,7 @@
   import PageHeading from 'Components/PageHeading';
   import Heading from 'Tags/Heading';
   import ImageSet from 'Tags/ImageSet';
+  import Wrapper from 'Tags/Wrapper';
 
   // professional projects
   import trimet from './portfolio/trimet';
@@ -150,7 +151,8 @@
     components: {
       PageHeading,
       Heading,
-      ImageSet
+      ImageSet,
+      Wrapper
     }
   }
 </script>

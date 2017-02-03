@@ -29,7 +29,13 @@
   .wrapper--narrow { max-width: 720px; }
   .wrapper--small { max-width: 960px; }
   .wrapper--normal { max-width: 1280px; }
-  .wrapper--wide { max-width: 1680px; }
+  .wrapper--wide {
+    max-width: 1280px;
+
+    @media (--huge) {
+      max-width: 90vw;
+    }
+  }
 
   .wrapper--no-padding {
     padding-left: 0em;
