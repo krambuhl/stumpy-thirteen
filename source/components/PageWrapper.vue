@@ -2,11 +2,7 @@
   <div id="app" class="page-wrapper">
     <mast-head class="page-wrapper_mast"></mast-head>
     <div id="content" class="page-wrapper_content">
-      <transition
-        name="fade"
-        @before-appear="beforeAppearHook"
-        @appear="appearHook"
-        @after-appear="afterAppearHook">
+      <transition name="fade">
         <slot></slot>
       </transition>
     </div>
@@ -41,7 +37,6 @@
     opacity: 0;
     transform: translate3d(0, 1.5em, 0);
   }
-
 </style>
 
 <script>
@@ -55,11 +50,6 @@
     components: {
       Wrapper,
       MastHead
-    },
-    methods: {
-      beforeAppearHook() { },
-      appearHook() { },
-      afterAppearHook() { }
     }
   }
 </script>
