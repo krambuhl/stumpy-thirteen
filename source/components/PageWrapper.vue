@@ -29,7 +29,7 @@
   }
 
   .fade-enter-active {
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
   .fade-leave-active {
@@ -39,7 +39,7 @@
   .fade-enter,
   .fade-leave-to {
     opacity: 0;
-    transform: translate3d(0, 1em, 0);
+    transform: translate3d(0, 1.5em, 0);
   }
 
 </style>
