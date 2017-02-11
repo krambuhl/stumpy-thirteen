@@ -1,20 +1,31 @@
 <template>
-  <img
-    class="image-set"
-    :src="typeof asset === 'string' ? asset : asset.src"
-    :srcset="asset.srcSet"
-    :alt="alt"
-    :width="width || asset.width"
-    :height="height || asset.height"
-    :style="{ backgroundImage: `url(${asset.placeholder})` }" />
+  <div class="image-set">
+    <img
+      class="image-set_asset"
+      :src="typeof asset === 'string' ? asset : asset.src"
+      :srcset="asset.srcSet"
+      :alt="alt"
+      :width="width || height ? width : asset.width"
+      :height="width || height ? height : asset.height"
+      :style="{ backgroundImage: `url(${asset.placeholder})` }" />
+    <div class="image-set_pusher" :style="{ paddingTop: ratio }"></div>
+  </div>
 </template>
 
 <style>
   .image-set {
+    position: relative;
     width: 100%;
     height: auto;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 0 1em;
+  }
+
+  .image-set_asset {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
     border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 1em;
     background-size: cover;
   }
 </style>
@@ -30,6 +41,11 @@
     },
     components: {
       Icon
+    },
+    computed: {
+      ratio: function() {
+        return (this.asset.height / this.asset.width * 100) + '%';
+      }
     }
   }
 </script>

@@ -37,6 +37,18 @@ module.exports = {
           'file?context=./source/&name=/assets/svgs/[name]-[md5:hash:hex:8].[ext]',
           'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
         ]
+      },
+      { test: /\.gif$/i,
+        loaders: [
+          'file?context=./source/&name=/assets/images/[name]-[md5:hash:hex:8].[ext]',
+          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
+      },
+      { test: /\.(jpe?g|png)$/i,
+        loaders: [
+          'responsive?name=/assets/images/[name]-[md5:hash:hex:8].',
+          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
       }
     ]
   },

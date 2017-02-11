@@ -76,6 +76,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
 
     padding: var(--size-padding-double) var(--size-padding-double) 12em;
     font-size: 0.8em;

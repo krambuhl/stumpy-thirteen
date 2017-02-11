@@ -32,19 +32,7 @@ module.exports = webpackMerge(baseConfig, {
   },
   module: {
     loaders: [
-      { test: /\.css$/, loader: ExtractTextPlugin.extract('css!postcss') },
-      { test: /\.(jpe?g|png)$/i,
-        loaders: [
-          'responsive?name=/assets/images/[name]-[md5:hash:hex:8].',
-          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-        ]
-      },
-      { test: /\.gif$/i,
-        loaders: [
-          'file?context=./source/&name=/assets/images/[name]-[md5:hash:hex:8].[ext]',
-          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-        ]
-      },
+      { test: /\.css$/, loader: ExtractTextPlugin.extract('css!postcss') }
     ]
   },
   plugins: [
@@ -68,7 +56,6 @@ module.exports = webpackMerge(baseConfig, {
     new StaticSiteGeneratorPlugin('static', paths, { layout, renderer }),
     new ExtractTextPlugin('/assets/[name].css')
   ],
-
   vue: {
     loaders: {
       css: ExtractTextPlugin.extract('css!postcss')

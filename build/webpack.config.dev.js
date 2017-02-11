@@ -28,18 +28,15 @@ module.exports = webpackMerge(baseConfig, {
   ],
   module: {
     loaders: [
-      { test: /\.css$/, loader: 'style!css!postcss' },
-      { test: /\.(jpe?g|png|gif)$/i,
-        loaders: [
-          'file?context=./source/&name=/assets/images/[name]-[md5:hash:hex:8].[ext]',
-          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-        ]
-      },
+      { test: /\.css$/, loader: 'style!css!postcss' }
     ]
   },
   vue: {
     loaders: {
       css: 'style!css!postcss'
     }
+  },
+  responsiveLoader: {
+    placeholder: true
   }
 })
