@@ -117,6 +117,7 @@
   // professional projects
   import trimet from './portfolio/trimet';
   import spectrumHealth from './portfolio/spectrum-health';
+  import keysightTechnologies from './portfolio/keysight-technologies';
   import caPortfolio from './portfolio/ca-portfolio';
   import juniperDeceptionForce from './portfolio/juniper-deception-force';
   import juniperRapBattle from './portfolio/juniper-rap-battle';
@@ -138,6 +139,7 @@
       return {
         projects: [
           Object.assign({ href: 'trimet' }, trimet.data()),
+          Object.assign({ href: 'keysight-technologies' }, keysightTechnologies.data()),
           Object.assign({ href: 'spectrum-health' }, spectrumHealth.data()),
           Object.assign({ href: 'ca-portfolio' }, caPortfolio.data()),
           Object.assign({ href: 'juniper-deception-force' }, juniperDeceptionForce.data()),
