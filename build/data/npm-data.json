@@ -10,7 +10,7 @@
     "name": "custom-event-polyfill",
     "version": "0.3.0",
     "description": "Polyfill for creating CustomEvents on IE9/10/11 if native implementation is missing.",
-    "lastUpdated": "2016-08-31T03:55:05.315Z",
+    "lastUpdated": "2017-09-07T16:07:14.536Z",
     "url": "https://www.npmjs.com/package/custom-event-polyfill"
   },
   {
@@ -40,6 +40,13 @@
     "description": "Library for creating common predicates.",
     "lastUpdated": "2015-06-02T12:48:08.488Z",
     "url": "https://www.npmjs.com/package/functional-predicates"
+  },
+  {
+    "name": "fuzzy-rucksack",
+    "version": "1.0.3",
+    "description": "tools for fuzzy-chainsaw",
+    "lastUpdated": "2017-04-11T22:57:34.266Z",
+    "url": "https://www.npmjs.com/package/fuzzy-rucksack"
   },
   {
     "name": "gates",
@@ -101,7 +108,7 @@
     "name": "metalsmith-external-links",
     "version": "0.1.2",
     "description": "Processes HTML pages, marking external links.",
-    "lastUpdated": "2015-08-05T06:38:43.642Z",
+    "lastUpdated": "2017-05-28T21:52:08.171Z",
     "url": "https://www.npmjs.com/package/metalsmith-external-links"
   },
   {
@@ -122,7 +129,7 @@
     "name": "metalsmith-rewrite",
     "version": "0.1.2",
     "description": "Renames a glob of files using string patterns and file metadata.",
-    "lastUpdated": "2015-08-05T06:38:07.771Z",
+    "lastUpdated": "2017-05-27T08:19:09.132Z",
     "url": "https://www.npmjs.com/package/metalsmith-rewrite"
   },
   {
@@ -145,6 +152,13 @@
     "description": "Predicate function checking if haystack object contains needle object",
     "lastUpdated": "2015-05-12T12:05:55.844Z",
     "url": "https://www.npmjs.com/package/object-contains"
+  },
+  {
+    "name": "postcss-import-webpack-resolver",
+    "version": "1.0.1",
+    "description": "creates a resolve function for postcss-import with webpack",
+    "lastUpdated": "2017-07-30T01:59:26.788Z",
+    "url": "https://www.npmjs.com/package/postcss-import-webpack-resolver"
   },
   {
     "name": "rogain",

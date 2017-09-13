@@ -3,10 +3,10 @@
     "name": "fuzzy-chainsaw",
     "fullname": "connectivedx/fuzzy-chainsaw",
     "description": null,
-    "lastUpdated": "2017-01-16T17:43:08Z",
+    "lastUpdated": "2017-08-24T17:14:00Z",
     "url": "https://github.com/connectivedx/fuzzy-chainsaw",
     "language": "JavaScript",
-    "stars": 6
+    "stars": 8
   },
   {
     "name": "atlas",
@@ -18,13 +18,22 @@
     "stars": 1
   },
   {
+    "name": "agnomen",
+    "fullname": "krambuhl/agnomen",
+    "description": "Release name generator.",
+    "lastUpdated": "2017-02-21T05:58:24Z",
+    "url": "https://github.com/krambuhl/agnomen",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
     "name": "appleseed",
     "fullname": "krambuhl/appleseed",
     "description": null,
-    "lastUpdated": "2016-09-22T05:58:16Z",
+    "lastUpdated": "2017-02-22T04:47:49Z",
     "url": "https://github.com/krambuhl/appleseed",
     "language": "JavaScript",
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "Backbone.Tendon",
@@ -93,10 +102,10 @@
     "name": "custom-event-polyfill",
     "fullname": "krambuhl/custom-event-polyfill",
     "description": "Polyfill for creating CustomEvents on IE9/10/11 if native implementation is missing.",
-    "lastUpdated": "2017-01-24T19:57:26Z",
+    "lastUpdated": "2017-07-15T18:54:08Z",
     "url": "https://github.com/krambuhl/custom-event-polyfill",
     "language": "JavaScript",
-    "stars": 41
+    "stars": 70
   },
   {
     "name": "date-grab",
@@ -111,8 +120,17 @@
     "name": "dopl",
     "fullname": "krambuhl/dopl",
     "description": "A tool for making a copy of a copy of a copy",
-    "lastUpdated": "2016-10-29T20:07:25Z",
+    "lastUpdated": "2017-04-25T01:57:25Z",
     "url": "https://github.com/krambuhl/dopl",
+    "language": "JavaScript",
+    "stars": 1
+  },
+  {
+    "name": "dotfiles",
+    "fullname": "krambuhl/dotfiles",
+    "description": "User dotfiles",
+    "lastUpdated": "2017-07-07T05:54:17Z",
+    "url": "https://github.com/krambuhl/dotfiles",
     "language": "JavaScript",
     "stars": 0
   },
@@ -183,19 +201,19 @@
     "name": "Formi",
     "fullname": "krambuhl/Formi",
     "description": "Functional API for javascript.",
-    "lastUpdated": "2015-01-03T06:59:17Z",
+    "lastUpdated": "2017-02-22T04:46:37Z",
     "url": "https://github.com/krambuhl/Formi",
     "language": "JavaScript",
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "functional-predicates",
     "fullname": "krambuhl/functional-predicates",
     "description": "Library for creating common predicates.",
-    "lastUpdated": "2015-06-02T10:11:56Z",
+    "lastUpdated": "2017-02-22T18:21:52Z",
     "url": "https://github.com/krambuhl/functional-predicates",
     "language": "JavaScript",
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "functional-ui-programming",
@@ -252,6 +270,15 @@
     "stars": 0
   },
   {
+    "name": "goober-schnitzel",
+    "fullname": "krambuhl/goober-schnitzel",
+    "description": "Okay",
+    "lastUpdated": "2017-04-19T08:24:35Z",
+    "url": "https://github.com/krambuhl/goober-schnitzel",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
     "name": "gulo",
     "fullname": "krambuhl/gulo",
     "description": "Views built with code instead of configurations.",
@@ -282,10 +309,10 @@
     "name": "hookie",
     "fullname": "krambuhl/hookie",
     "description": "Simple function lifecycle hooks",
-    "lastUpdated": "2015-05-07T06:04:36Z",
+    "lastUpdated": "2017-02-22T04:45:29Z",
     "url": "https://github.com/krambuhl/hookie",
     "language": "JavaScript",
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "how-to-front-end",
@@ -336,9 +363,18 @@
     "name": "Kondico",
     "fullname": "krambuhl/Kondico",
     "description": "Functional conditions and compositions.",
-    "lastUpdated": "2015-01-30T02:34:29Z",
+    "lastUpdated": "2017-02-22T04:44:40Z",
     "url": "https://github.com/krambuhl/Kondico",
     "language": "JavaScript",
+    "stars": 1
+  },
+  {
+    "name": "lastfm-data",
+    "fullname": "krambuhl/lastfm-data",
+    "description": "Datascrunger ",
+    "lastUpdated": "2017-06-19T09:49:42Z",
+    "url": "https://github.com/krambuhl/lastfm-data",
+    "language": "Elm",
     "stars": 0
   },
   {
@@ -417,10 +453,10 @@
     "name": "metalsmith-rewrite",
     "fullname": "krambuhl/metalsmith-rewrite",
     "description": "Renames a glob of files using string interpolation with file metadata or a function.",
-    "lastUpdated": "2016-07-31T00:24:38Z",
+    "lastUpdated": "2017-07-13T20:42:14Z",
     "url": "https://github.com/krambuhl/metalsmith-rewrite",
     "language": "JavaScript",
-    "stars": 1
+    "stars": 4
   },
   {
     "name": "mutators",
@@ -429,6 +465,15 @@
     "lastUpdated": "2015-05-11T23:14:59Z",
     "url": "https://github.com/krambuhl/mutators",
     "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "new-machine-checklist",
+    "fullname": "krambuhl/new-machine-checklist",
+    "description": "Let's make a nice build environment",
+    "lastUpdated": "2017-07-07T07:26:30Z",
+    "url": "https://github.com/krambuhl/new-machine-checklist",
+    "language": null,
     "stars": 0
   },
   {
@@ -453,10 +498,10 @@
     "name": "object-contains",
     "fullname": "krambuhl/object-contains",
     "description": "Predicate function checking if haystack object contains needle object",
-    "lastUpdated": "2015-10-28T16:41:11Z",
+    "lastUpdated": "2017-08-27T12:59:58Z",
     "url": "https://github.com/krambuhl/object-contains",
     "language": "JavaScript",
-    "stars": 3
+    "stars": 4
   },
   {
     "name": "Open-Remix",
@@ -477,6 +522,15 @@
     "stars": 0
   },
   {
+    "name": "postcss-import-webpack-resolver",
+    "fullname": "krambuhl/postcss-import-webpack-resolver",
+    "description": "Custom resolve function for using postcss-import with webpack",
+    "lastUpdated": "2017-07-30T01:47:58Z",
+    "url": "https://github.com/krambuhl/postcss-import-webpack-resolver",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
     "name": "postcss-pipeline-webpack-plugin",
     "fullname": "krambuhl/postcss-pipeline-webpack-plugin",
     "description": "A webpack plugin to process generated assets with PostCSS pipeline",
@@ -491,6 +545,15 @@
     "description": "Reflect components every which way",
     "lastUpdated": "2016-06-28T17:32:20Z",
     "url": "https://github.com/krambuhl/reflecto",
+    "language": "JavaScript",
+    "stars": 0
+  },
+  {
+    "name": "resume",
+    "fullname": "krambuhl/resume",
+    "description": "Software Engineer focused on Javascript and User Experience.",
+    "lastUpdated": "2017-09-12T23:32:49Z",
+    "url": "https://github.com/krambuhl/resume",
     "language": "JavaScript",
     "stars": 0
   },
