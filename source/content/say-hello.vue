@@ -3,7 +3,7 @@
     <rhythm variant="huge">
       <rhythm variant="small" class="say-hello_heading">
         <heading tagName="h1">So you want to say hello?</heading>
-        <p>I've been known to use social media and internet services. Send me a message and we can get weird.</p>
+        <p>Send me a message and we can get to making.</p>
       </rhythm>
 
       <rhythm variant="small">
@@ -12,11 +12,6 @@
           <span class="say-hello_arrow">&mdash;&gt;</span>
           <a href="mailto:evan.krambuhl@gmail.com" target="_blank">evan.krambuhl@gmail.com</a>
         </p>
-        <p>
-          Twitter
-          <span class="say-hello_arrow">&mdash;&gt;</span>
-          <a href="https://twitter.com/evan_is" target="_blank">@evan_is</a>
-          </p>
         <p>
           Github
           <span class="say-hello_arrow">&mdash;&gt;</span>
@@ -30,7 +25,7 @@
       </rhythm>
 
       <rhythm class="say-hello_message" variant="small">
-        <p>I'm currently not looking for work, but I'd love to talk with you about what you're working on.</p>
+        <p>I'm currently looking for work! Here is my <a href="https://www.linkedin.com/in/evan-krambuhl-52007627" target="_blank">LinkedIn</a> profile and <a href="http://evan.krambuhl.com" target="_blank">Resume</a> to get the ball rolling.</p>
       </rhythm>
     </rhythm>
   </wrapper>
@@ -75,7 +70,19 @@
   }
 
   .say-hello_message {
-    opacity: 0.6;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 520px;
+    padding: 1em;
+    border-radius: 1em;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+
+    & a { color: var(--color-dark); }
+
+    @media (--medium) {
+      padding: 1.5em 2em;
+    }
   }
 </style>
 
