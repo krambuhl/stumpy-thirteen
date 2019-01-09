@@ -17,7 +17,7 @@
   .page-wrapper_mast {}
   .page-wrapper_content {
     padding-top: 3em;
-    padding-bottom: 2em;
+    /* padding-bottom: 2em; */
     text-align: center;
 
     @media (--small) { padding-top: 4em; }

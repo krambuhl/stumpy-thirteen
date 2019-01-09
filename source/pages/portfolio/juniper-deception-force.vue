@@ -10,23 +10,23 @@
 
 <script>
   import PortfolioProject from 'Components/PortfolioProject';
-  import trimetHomepageImage from './assets/trimet-homepage.jpg';
+  import image from 'Assets/portfolio/juniper-deception-force.jpg';
 
   export default {
     meta: {
       ...PortfolioProject.meta,
-      pageTitle: 'Trimet.org - Stumptown Bear'
+      pageTitle: 'Juniper Deception Force - Stumptown Bear'
     },
     data() {
       return {
-        title: 'Trimet.org redesign',
-        year: 2015,
-        company: 'TriMet',
-        companyHref: 'http://trimet.org',
-        projectHref: 'http://trimet.org',
+        title: 'Juniper Deception Force',
+        year: 2014,
+        company: 'John McNeil Studio',
+        companyHref: 'http://www.johnmcneilstudio.com/',
+        projectHref: 'http://deceptionforce.com/',
         projectImages: [{
-          alt: 'Trimet.org hompage tools',
-          asset: trimetHomepageImage
+          alt: 'Landing page',
+          asset: image
         }]
       }
     },

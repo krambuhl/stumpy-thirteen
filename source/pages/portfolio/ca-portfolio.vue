@@ -10,9 +10,9 @@
 
 <script>
   import PortfolioProject from 'Components/PortfolioProject';
-  import imageHome from './assets/ca-portfolio-home.jpg';
-  import imageDevops from './assets/ca-portfolio-devops.jpg';
-  import imageBook from './assets/ca-portfolio-book.jpg';
+  import imageHome from 'Assets/portfolio/ca-portfolio-home.jpg';
+  import imageDevops from 'Assets/portfolio/ca-portfolio-devops.jpg';
+  import imageBook from 'Assets/portfolio/ca-portfolio-book.jpg';
 
   export default {
     meta: {

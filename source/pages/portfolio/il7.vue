@@ -10,22 +10,22 @@
 
 <script>
   import PortfolioProject from 'Components/PortfolioProject';
-  import image from './assets/iounoi.jpg';
+  import image from 'Assets/portfolio/il7.jpg';
 
   export default {
     meta: {
       ...PortfolioProject.meta,
-      pageTitle: 'IOUNOI - Stumptown Bear'
+      pageTitle: 'IL7 Logo - Stumptown Bear'
     },
     data() {
       return {
-        title: 'IOUNOI',
+        title: 'IL7 Logo',
         year: 2014,
         company: 'Stumptown Bear',
         companyHref: 'http://stumptownbear.com',
-        projectHref: 'http://iounoi.com',
+        projectHref: 'https://github.com/il7',
         projectImages: [{
-          alt: 'IOUNOI Logo',
+          alt: 'IL7 Logo',
           asset: image
         }]
       }

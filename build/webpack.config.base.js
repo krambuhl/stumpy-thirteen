@@ -17,13 +17,13 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.vue'],
     alias: {
+      Assets: path.resolve(__dirname, '..', 'source/assets'),
       Vars: path.resolve(__dirname, '..', 'source/variables'),
       Utils: path.resolve(__dirname, '..', 'source/utils'),
-      Content: path.resolve(__dirname, '..', 'source/content'),
+      Pages: path.resolve(__dirname, '..', 'source/pages'),
       Components: path.resolve(__dirname, '..', 'source/components'),
       Tags: path.resolve(__dirname, '..', 'source/tags'),
-      'data/npm': path.resolve(__dirname, 'data/npm-data.json'),
-      'data/github': path.resolve(__dirname, 'data/github-data.json'),
+      Layouts: path.resolve(__dirname, '..', 'source/layouts')
     },
   },
   module: {

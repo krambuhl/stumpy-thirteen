@@ -10,31 +10,31 @@
 
 <script>
   import PortfolioProject from 'Components/PortfolioProject';
-  import imageHome from './assets/spectrum-home.png';
-  import imageSearch from './assets/spectrum-search.png';
-  import imageEvents from './assets/spectrum-events.png';
+  import imageOverview from 'Assets/portfolio/keysight-overview.png';
+  import imageFamily from 'Assets/portfolio/keysight-family.png';
+  import imageBundle from 'Assets/portfolio/keysight-bundle.png';
 
   export default {
     meta: {
       ...PortfolioProject.meta,
-      pageTitle: 'Spectrum Health - Stumptown Bear'
+      pageTitle: 'Keysight Technologies - Stumptown Bear'
     },
     data() {
       return {
-        title: 'Spectrum Health',
+        title: 'Keysight Technologies',
         year: 2016,
         company: 'ConnectiveDX',
         companyHref: 'https://www.connectivedx.com/',
-        projectHref: 'http://www.spectrumhealth.org/',
+        projectHref: 'https://www.keysight.com/us/en/software/application-sw.html',
         projectImages: [{
-          alt: 'Homepage',
-          asset: imageHome
+          alt: 'Product bundle page',
+          asset: imageBundle
         }, {
-          alt: 'Search application',
-          asset: imageSearch
+          alt: 'Product family page',
+          asset: imageFamily
         }, {
-          alt: 'Events page',
-          asset: imageEvents
+          alt: 'Product family overview page',
+          asset: imageOverview
         }]
       }
     },

@@ -1,27 +1,29 @@
 <template>
-  <wrapper class="portfolio" variant="wide">
-    <page-heading>
-      <heading tagName="h1" class="portfolio_title">Portfolio</heading>
-      <p>A sampling of my contributions as a web developer and designer</p>
-    </page-heading>
+  <container id="portfolio">
+    <wrapper class="portfolio" variant="wide">
+      <page-heading>
+        <heading tagName="h1" class="portfolio_title">Portfolio</heading>
+        <p>A sampling of my contributions as a web developer and designer</p>
+      </page-heading>
 
-    <div class="portfolio_list">
-      <article v-for="project in projects">
-        <router-link class="portfolio_project portfolio_project-link" :to="'/portfolio/' + project.href">
-          <div class="portfolio_project-header">
-            <heading tagName="h2">{{project.title}}</heading>
-            <p>{{project.year}} / {{project.company}}</p>
-          </div>
+      <div class="portfolio_list">
+        <article v-for="project in projects">
+          <router-link class="portfolio_project portfolio_project-link" :to="project.href">
+            <div class="portfolio_project-header">
+              <heading tagName="h2">{{project.title}}</heading>
+              <p>{{project.year}} / {{project.company}}</p>
+            </div>
 
-          <image-set
-            class="portfolio_project-image"
-            :alt="project.projectImages[0].alt"
-            :asset="project.projectImages[0].asset" />
-          </div>
-        </router-link>
-      </article>
-    </div>
-  </wrapper>
+            <image-set
+              class="portfolio_project-image"
+              :alt="project.projectImages[0].alt"
+              :asset="project.projectImages[0].asset" />
+            </div>
+          </router-link>
+        </article>
+      </div>
+    </wrapper>
+  </container>
 </template>
 
 <style>
@@ -31,13 +33,25 @@
 
   .portfolio_list {
     @media (--small) {
-      margin-top: 1em;
+      padding-top: 1em;
+      column-count: 2;
+      column-gap: 1em;
+
+      & article {
+        padding-top: 1em;
+      }
+
+      & article + article {
+        /* margin-top: 1em; */
+      }
     }
 
     @media (--medium) {
-      margin-top: 2em;
-      column-count: 2;
-      column-gap: 0em;
+      column-count: 3;
+    }
+
+    @media (--large) {
+      column-count: 4;
     }
   }
 
@@ -45,24 +59,20 @@
     position: relative;
     break-inside: avoid;
     border-radius: 6px;
-    margin-bottom: var(--size-padding-double);
 
     transition: background-color 0.3s ease;
+
+    &:focus {
+      outline: none;
+      box-shadow: var(--color-green) 0 0 0 3px;
+    }
 
     &:active,
     &:hover,
     &:focus {
-      outline: none;
-      background-color: color(var(--color-dark) alpha(20%));
-
       & .portfolio_project-header {
         opacity: 1;
       }
-    }
-
-    @media (--medium) {
-      margin-bottom: 0;
-      padding: var(--size-padding-half);
     }
   }
 
@@ -76,13 +86,14 @@
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     z-index: 10;
 
     padding: var(--size-padding-double) var(--size-padding-double) 12em;
     font-size: 0.8em;
     text-align: left;
 
-    border-radius: 6px;
+    border-radius: 4px;
     color: var(--color-light);
     background-image: linear-gradient(
       to bottom,
@@ -97,10 +108,6 @@
     & a {
       color: var(--color-light);
     }
-
-    @media (--medium) {
-      padding: var(--size-padding-triple) var(--size-padding-triple) 12em;
-    }
   }
 
   .portfolio_project-image {
@@ -109,27 +116,28 @@
 </style>
 
 <script>
+  import Container from 'Tags/Container';
   import PageHeading from 'Components/PageHeading';
   import Heading from 'Tags/Heading';
   import ImageSet from 'Tags/ImageSet';
   import Wrapper from 'Tags/Wrapper';
 
   // professional projects
-  import trimet from './portfolio/trimet';
-  import spectrumHealth from './portfolio/spectrum-health';
-  import keysightTechnologies from './portfolio/keysight-technologies';
-  import caPortfolio from './portfolio/ca-portfolio';
-  import juniperDeceptionForce from './portfolio/juniper-deception-force';
-  import juniperRapBattle from './portfolio/juniper-rap-battle';
-  import webtrendsToday from './portfolio/webtrends-today';
-  import webtrendsStreams from './portfolio/webtrends-streams';
-  import webtrendsPrototypes from './portfolio/webtrends-prototypes';
+  import trimet from 'Pages/portfolio/trimet';
+  import spectrumHealth from 'Pages/portfolio/spectrum-health';
+  import keysightTechnologies from 'Pages/portfolio/keysight-technologies';
+  import caPortfolio from 'Pages/portfolio/ca-portfolio';
+  import juniperDeceptionForce from 'Pages/portfolio/juniper-deception-force';
+  import juniperRapBattle from 'Pages/portfolio/juniper-rap-battle';
+  import webtrendsToday from 'Pages/portfolio/webtrends-today';
+  import webtrendsStreams from 'Pages/portfolio/webtrends-streams';
+  import webtrendsPrototypes from 'Pages/portfolio/webtrends-prototypes';
 
   // personal project
-  import il7 from './portfolio/il7';
-  import iounoi from './portfolio/iounoi';
-  import precisionMachines from './portfolio/precision-machines';
-  import designPrototypes from './portfolio/design-prototypes';
+  import il7 from 'Pages/portfolio/il7';
+  import iounoi from 'Pages/portfolio/iounoi';
+  import precisionMachines from 'Pages/portfolio/precision-machines';
+  import designPrototypes from 'Pages/portfolio/design-prototypes';
 
   export default {
     meta: {
@@ -155,6 +163,7 @@
       }
     },
     components: {
+      Container,
       PageHeading,
       Heading,
       ImageSet,

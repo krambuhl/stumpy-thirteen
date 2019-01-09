@@ -10,7 +10,7 @@
 
 <script>
   import PortfolioProject from 'Components/PortfolioProject';
-  import image from './assets/juniper-rap-battle.jpg';
+  import image from 'Assets/portfolio/juniper-rap-battle.jpg';
 
   export default {
     meta: {
@@ -23,7 +23,7 @@
         year: 2014,
         company: 'John McNeil Studio',
         companyHref: 'http://www.johnmcneilstudio.com/',
-        projectHref: 'http://datacenterrapbattle.com/',
+        projectHref: undefined,
         projectImages: [{
           alt: 'Landing page',
           asset: image

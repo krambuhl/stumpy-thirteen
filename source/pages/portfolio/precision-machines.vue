@@ -10,8 +10,8 @@
 
 <script>
   import PortfolioProject from 'Components/PortfolioProject';
-  import imageWebsite from './assets/pm-falling-sun-website.png';
-  import imageCover from './assets/pm-falling-sun-cover.jpg';
+  import imageWebsite from 'Assets/portfolio/pm-falling-sun-website.png';
+  import imageCover from 'Assets/portfolio/pm-falling-sun-cover.jpg';
 
   export default {
     meta: {

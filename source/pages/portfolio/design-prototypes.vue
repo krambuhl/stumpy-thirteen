@@ -10,7 +10,7 @@
 
 <script>
   import PortfolioProject from 'Components/PortfolioProject';
-  import image from './assets/design-prototype.jpg';
+  import image from 'Assets/portfolio/design-prototype.jpg';
 
   export default {
     meta: {

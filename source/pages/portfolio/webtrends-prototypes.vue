@@ -10,22 +10,22 @@
 
 <script>
   import PortfolioProject from 'Components/PortfolioProject';
-  import image from './assets/webtrends-streams.jpg';
+  import image from 'Assets/portfolio/webtrends-prototype.jpg';
 
   export default {
     meta: {
       ...PortfolioProject.meta,
-      pageTitle: 'Webtrends Streams - Stumptown Bear'
+      pageTitle: 'Webtrends Prototypes - Stumptown Bear'
     },
     data() {
       return {
-        title: 'Webtrends Streams demo',
+        title: 'Webtrends Prototypes',
         year: 2012,
         company: 'Webtrends',
         companyHref: 'https://www.webtrends.com/',
         projectHref: undefined,
         projectImages: [{
-          alt: 'Telegraph.co.uk streams demo',
+          alt: 'Employee Dashboard',
           asset: image
         }]
       }

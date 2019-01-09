@@ -2,11 +2,11 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 // order matters yo
-import cssReset from 'reset-css/reset.css';
+import 'reset-css/reset.css';
 import App from 'Components/App';
 import router from './router';
 
-const __svg__ = { path: './tags/assets/**/*.svg', name: '/assets/svgs/iconset.svg' };
+const __svg__ = { path: './assets/svg/**/*.svg', name: '/assets/svgs/iconset.svg' };
 require('webpack-svgstore-plugin/src/helpers/svgxhr')(__svg__);
 
 Vue.use(VueRouter)

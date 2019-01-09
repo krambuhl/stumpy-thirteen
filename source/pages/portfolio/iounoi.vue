@@ -10,22 +10,22 @@
 
 <script>
   import PortfolioProject from 'Components/PortfolioProject';
-  import image from './assets/webtrends-prototype.jpg';
+  import image from 'Assets/portfolio/iounoi.jpg';
 
   export default {
     meta: {
       ...PortfolioProject.meta,
-      pageTitle: 'Webtrends Prototypes - Stumptown Bear'
+      pageTitle: 'IOUNOI - Stumptown Bear'
     },
     data() {
       return {
-        title: 'Webtrends Prototypes',
-        year: 2012,
-        company: 'Webtrends',
-        companyHref: 'https://www.webtrends.com/',
-        projectHref: undefined,
+        title: 'IOUNOI',
+        year: 2014,
+        company: 'Stumptown Bear',
+        companyHref: 'http://stumptownbear.com',
+        projectHref: 'http://iounoi.com',
         projectImages: [{
-          alt: 'Employee Dashboard',
+          alt: 'IOUNOI Logo',
           asset: image
         }]
       }

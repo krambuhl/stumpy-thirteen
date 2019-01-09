@@ -14,7 +14,7 @@
   }
 
   .error-404_body {
-    background-image: url('./assets/scratching-bear.gif');
+    background-image: url('../assets/scratching-bear.gif');
     background-size: cover;
     background-position: 75% 0%;
 
